@@ -12,5 +12,18 @@
 \maketitle
 
 \section{Uvod}
+Naj bo $G = (V, E)$ graf, kjer je $V$ množica vozljišč in $E$ množica povezav med njimi. Liho neodvisna množica $S \subseteqq V$ je posebna vrsta neodvisne množice, kar pomeni, da nobeni dve vozljišči iz $S$ nista neposredno povezani. Poleg te lastnosti pa mora množica $S$ izpolnjevati še dodatni pogoj, da za vsako vozljišče $v$, ki ne pripada množici $S$ (vsak $v \in V \setminus S$), mora veljati, da nima nobenega soseda v množici $S$ ($N(v) \cap S = \emptyset$), ali ima liho število sosedov v $S$ ($|N(v) \cap S| \equiv 1$). Tukaj $N(v)$ označuje odprto sosedstvo vozljišča $v$, torej množico vseh vozljišč, ki so neposredno povezani z $v$. Največja možna moč takšne množice v grafu $G$ se imenuje liho neodvisno število grafa in jo označimo z $\alpha _{od}(G)$.\\
+Barvanje grafa je močno liho, če velja, da se v sosedstvu vsakega vozljišča vsaka barva pojavi liho mnogokrat. Močno liho kromatično število $\chi _{so}(G)$ je najmanjše število barv, ki omogoča liho barvanje grafa $G$.\\
+Zveza ki povezuje $\alpha _{od}(G)$ in $\chi _{so}(G)$ je $$\alpha _{od}(G) \cdot \chi _{so}(G) \geqslant |G|.$$ 
+
+\section{Opredelitev problema}
+V nadaljevanju obravnavamo le grafe za katere velja $\alpha _{od}(G) = 1$. Primeri takih grafov so:
+\begin{itemize} 
+    \item $K_2$, $K_3$ in na splošno vsi $K_n$ (polni grafi), 
+    \item $P_3$ (pot s tremi vozlišči), 
+    \item $C_4$ (cikel s štirimi vozlišči), $C_5$ (cikle s petimi vozlišči).
+\end{itemize}
+Očitno se opazi, da mora imeti vsak tak graf premer največ 2, kar pomeni, da je razdalja med katerimkoli parom vozlišč največ 2. (ni še dokončano)
+
 
 \end{document}
