@@ -1,0 +1,171 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}  
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+
+\newcommand{\fn}[1]{\texttt{#1}}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    {\Large Univerza v Ljubljani\\
+    Fakulteta za matematiko in fiziko\par}
+    
+    \vspace{3cm}
+    
+    {\Huge \textbf{Grafi z liho neodvisno množico velikosti 1}\par}
+    
+    \vspace{3cm}
+    
+    {\large Avtorja:\par}
+    \vspace{0.2cm}
+    {\large Mia Nardin\\
+    Tilen Žabkar\par}
+    
+    \vfill
+    
+    {\large December 2025\par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Uvod}
+V projektu preučujemo povezane grafe, za katere velja $\alpha_{od}(G) = 1$, kjer  $\alpha_{od}(G)$ označuje velikost največje lihe neodvisne množice v grafu. Liha neodvisna množica $S$ mora izpolnjevati naslednja dva pogoja:
+\begin{enumerate}
+    \item $S$ je neodvisna množica (elementi znotraj $S$ niso povezani med seboj).
+    \item Za vsako vozlišče $v \in V \setminus S$ velja, da je $N(v) \cap S = \emptyset$ ali $|N(v) \cap S| \equiv 1 \pmod{2}$.
+\end{enumerate}
+Ti grafi tvorijo zanimiv in izrazito restriktiven razred, saj iz definicije sledi, da lahko $S$ vsebuje največ eno vozlišče. Zanimalo nas je, kakšne strukturne značilnosti so skupne vsem grafom, za katere je $\alpha_{od}(G) = 1$ in katerim drugim lastnostim so ekvivalentni ali vsaj nujni pogoji.\\
+Iz literature je znano, da:
+\begin{enumerate}
+    \item Vsi taki grafi imajo premar največ 2.
+    \item Če velja $\alpha_{od}(G) = 1$, potem velja tudi $\chi_{so}(G + K_r) = 1$.
+    \item Če je graf claw-free, potem velja, da je $\alpha_{od}(G) = 1$ natanko tedaj, ko ima graf premer največ 2.
+\end{enumerate}
+
+\section{Opis problema in cilj raziskave}
+Cilj je bil identificirati nujne ali zadostne pogoje za grafe z $\alpha_{od}(G) = 1$.
+Izvedli smo dve vrsti preizkušanja:
+\begin{enumerate}
+    \item popolno generiranje vseh neizomorfnih grafov za $n \leqslant 9$,
+    \item verjetnostno generiranje za $10 \leqslant n \leqslant 30$.
+\end{enumerate}
+
+\section{Metode in implementacija}
+
+\subsection{Izračun $\alpha_{od}(G)$}
+Funkcijo \fn{alpha\_{od}(G)} smo implementirali s celoštevilskim lineranim programom (CLP), ki sledi definiciji lihe neodvisne množice. Funkcija vrne velikost največje lihe neodvisne množice v grafu $G$. Testiranje na majhnih grafih je potrdilo pravilnost implementacije:
+\begin{itemize}
+    \item $\alpha_{od}(P_4)$ = 2,
+    \item $\alpha_{od}(C_4)$ = 1,
+    \item $\alpha_{od}(C_5)$ = 1.
+\end{itemize}
+
+\subsection{Izračun $\chi_{so}(G)$}
+Implementirali smo še CLP za določanje najmanjšega števila barv za krepko liho barvanje grafa $G$. Testiranje na majhnih garfih nam je vrnilo naslednje rezultate:
+\begin{itemize}
+    \item $\chi_{so}(P_4)$ = 3,
+    \item $\chi_{so}(C_4)$ = 4,
+    \item $\chi_{so}(C_5)$ = 5,
+    \item $\chi_{so}(K_{3,4})$ = 3.
+\end{itemize}
+Rezultati so potrdili neenačbo $\alpha_{od}(G) \cdot \chi_{so}(G) \geqslant |V|.$
+
+\subsection{Generiranje grafov}
+Za $n \leqslant 9$ smo generirali vse neizomorfne grafe in obdržali le tiste z $\alpha_{od}(G) = 1$. Rezultati:
+
+\begin{table}[ht]
+    \centering
+    \label{tab:small-graphs-alphaod1}
+    \begin{tabular}{cr}
+        \toprule
+        $n$ & Število grafov z $\alpha_{\mathrm{od}}(G) = 1$ \\
+        \midrule
+        1 & 1 \\
+        2 & 1 \\
+        3 & 2 \\
+        4 & 4 \\
+        5 & 11 \\
+        6 & 43 \\
+        7 & 266 \\
+        8 & 3\,042 \\
+        9 & 69\,645 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Število povezanih grafov z lastnostjo $\alpha_{\mathrm{od}}(G) = 1$ za majhne $n$.}
+\end{table}
+
+Za $n \geqslant 10$ bi bil popolni pregled neizvedljiv, saj je takih grafov preveč, da bi lahko $\alpha_{od}(G)$ preverili za vsakega posebej. Zato smo generirali naključne grafe in jih popravili, da imajo premer $\leqslant 2$ in šele nato smo poračunali $\alpha_{od}(G)$. Za vsak $n$ smo izvedli 500 poskusov. Povprečno smo našli med 350 in 500 grafov za vsak $n$. Skupno smo zbrali 82186 grafov z lastnostjo $\alpha_{od}(G) = 1$.
+
+\subsection{Testiranje hipotez}
+Za vsako hipotezo $H(G)$ smo testirali:
+\begin{itemize}
+    \item nujnost: $\alpha_{od}(G) = 1 \Rightarrow H(G)$.
+    \item zadostnost: $H(G) \Rightarrow \alpha_{od}(G) = 1$.
+\end{itemize}
+Teste nujnosti smo izvedeli na vseh 82186 grafih, teste zadostnosti pa smo zaradi časovne zahtevnosti izvedli le na grafih do $n \leqslant 8$.\\
+Poleg tega smo definirali funkcijo \fn{is\_claw\_free(G)}, ki preveri, ali graf ne vsebuje induciranega podgrafa $K_{1,3}$. Funkcija uporablja vgrajeno metodo \fn{subgraph\_search}.
+
+\section{Rezultati}
+\subsubsection*{H: Premer grafa je največ 2.}
+Pri testiranju vseh najdenih grafov z $\alpha_{od}(G) = 1$ nismo dobili nobenega protiptimera, torej je lastnost nujna, ni pa zadostna, saj smo pri grafih do 8 vozlišč našli že več kot tisoč protiprimerov. To je smiselno, saj $\alpha_{od}(G) = 1$ pomeni, da ne obstaja tako velika liha neodvisna množica, torej graf ne dopušča izbire več medsebojno nesosednjih vozlišč, ki bi hkrati zadovolijla parnostni pogoj v sosedstvih ostalih vozlišč.
+
+\subsubsection*{H: Premer grafa je enak 2.}
+Med vsemi grafi z $\alpha_{od}(G) = 1$ smo našli le 9 protiprimerov, torej je lastnost skoraj nujna, podobno kot prej pa ni zadostna. Ti redki protiprimeri so grafi s premerom 0 ali 1 ($K_1$ in polni grafi $K_n$). Ko $n$ raste, grafi z $\alpha_{od}(G) = 1$ postanejo dovolj gosti, da zagotovijo razdaljo največ 2 med vsemi pari vozlišč.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{slike/Diameter_equal_to_2.png}
+\caption{Protiprimera hipoteze: Premer grafa je enak 2.}
+\label{fig:Diameter_equal_to_2}
+\end{figure}
+
+\subsubsection*{H: Povprečna stopnja grafa je vsaj 3.}
+Povprečna stopnja grafa je $\overline{d}(G) = \frac{2|E|}{|V|}$. Če je $\overline{d}(G) \geqslant 3$ pomeni, da je graf v povprečju zmerno gost. Pri testu nujnosti smo našli le 29 protiprimerov. Opazimo, da se večina protiprimerov pojavi pri grafih z $n \leqslant 7$ kar je smiselno, saj vemo da z $n$ narašča tudi gostota grafov. Ta lastnost je tudi posledica lastnosti da imajo grafi z $\alpha_{od}(G) = 1$ premer največ 2, saj da graf z velikim številom vozliš doseže tako majhen premer mora imeti veliko število povezav.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{slike/Average_degree_at_least_3.png}
+\caption{Protiprimer hipoteze: Povprečna stopnja grafa je vsaj 3.}
+\label{fig: Average_degree_at_least_3}
+\end{figure}
+
+\subsubsection*{H: Graf je regularen.}
+Graf je regularen, če imajo vsa vozlišča enako stopnjo. Pri testu zadostnosti smo dobili le 11 protiprimerov za $n \leqslant 8$. V regularnem grafu je težje najti množico vozlišč, ki bi bila neodvisna in hkrati usterzala drugemu pogoju $\alpha_{od}(G)$. Simetrija povzroči, da se parnostni pogoji hitro porušijo, ko poskušamo izbrati več kot eno vozlišče v liho neodvisno množico.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{slike/Regular.png}
+\caption{Protiprimer hipoteze: Graf je regularen.}
+\label{fig: Regular}
+\end{figure}
+
+\subsubsection*{H: Graf je močno regularen.}
+Za močno regularen graf velja, da imajo vsa vozlišča enako stopnjo, da ima vsak par sosednjih vozlišč enako število skupnih sosedov, prav tako pa ima tudi vsak par nesosednjih vozlišč enako število skupnih sosedov. Gre torej za zelo simetrične grafe. Pri testu zadostnosti smo dobili le 2 protiprimera za $n \leqslant 8$. To je smiselno, saj v močno regularnem grafu ni dovolj strukturne raznolikosti, da bi omogočila obstoj večje lihe neodvisne množice, ker vsak poskus take izbire bi hitro vodil do kršitve definicije.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{slike/Strongly_regular.png}
+\caption{Protiprimer hipoteze: Graf je močno regularen.}
+\label{fig: Strongly regular}
+\end{figure}
+
+\subsubsection*{H: $\alpha (G^2) == 1$}
+Kvadrat grafa $G^2$ je graf na isti množici vozlišč kot $G$, kjer sta dve vozlišči povezani, če je njuna razdalja v $G$ največ 2. Pogoj $\alpha (G^2) = 1$ poemni, da v $G^2$ ne obstaja dva nepovezana vozlišča, torej je $G^2$ poln graf. Ekvivalento to pomeni, da ima graf $G$ premer največ 2. Pri testiranju nujnosti smo dobili le en protiprimer in to je graf z enim samim vozliščem, pri katerem je kvadrat grafa enak samemu sebi. 
+
+\subsubsection*{H: $\chi_{so}(G) = n$}
+$\chi_{so}(G)$ je najmanjše število barv, s katerimi lahko graf $G$ pobarvamo tako, da sosednja vozlišča nimajo iste barve in da za vsako vozlišče $v$ in vsako uporabljeno barvo velja, da se ta barva v sosedstvu vozlišča $v$ pojavi liho mnogokrat ali pa se spolh ne. Naš pogoj tako zahteva, da mora vsako vozlišče imeti svojo barvo. Zaradi časovne zahtevnosti CLP, smo testiranje za nujnost in zadostnost izvedeli le na grafih do 6 vozlišč. V obeh primerih nismo dobili nobenega protiprimera. Če bi v garfu poskusili uporabiti manj kot $n$ barv, bi morali isto barvo dodeliti več vozliščem, kar je problematično, saj kot vemo so grafi $\alpha_{od}(G) = 1$ zelo gosti in imajo majhen premer, zato se sosedstva vozlišč močno prekrivajo. Prav tako vemo da velja neenačba $\alpha_{od}(G) \cdot \chi_{so}(G) \geqslant |V|$, kar pa nam pove, da če je $\alpha_{od}(G) = 1$, potem nujno velja  $\chi_{so}(G) \geqslant |V|$. Ker pa je $|V|$ očitno zgornja meja za $\chi_{so}(G)$ sledi $\chi_{so}(G) = |V|$.
+
+\section{Zaključek}
+V projektu smo preučili družino grafov z lastnostjo $\alpha_{od}(G) = 1$. Ugotovili smo, da imajo vsi taki grafi premer največ 2, kar se je izkazalo za nujen, vendar ne zadosten pogoj. Takšni garfi so praviloma gosti, z visoko povprečno stopnjo in pogosto z izrazito simetrično strukturo, kot so regularni in močno regularni grafi. Za vse grafe, pri katerih je bil izračun mogoč, je veljalo tudi $\chi_{so}(G) = |V|$, kar potruje povezanost med lihimi neodvisnimi množicami in močnim lihim barvanje. Čeprav večina obravnavanih lastnosti ni strogo nujnih ali zadostnih, majhno število protiprimerov kaže, da dobro opisujejo tipično strukturo grafov $\alpha_{od}(G) = 1.$
+
+
+\end{document}
