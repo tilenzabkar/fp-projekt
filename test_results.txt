@@ -1,10 +1,10 @@
 Loading graphs from graphs_with_alpha_od_1.g6...
-Loaded 82186 graphs
+Loaded 94456 graphs
 ======================================================================
 Property: Diameter at most 2
 ----------------------------------------------------------------------
 Necessity test for Diameter at most 2
-Tested 82186 graphs with alpha_od = 1.
+Tested 94456 graphs with alpha_od = 1.
 Found 0 counterexamples.
 No counterexamples found. The property appears necessary.
 
@@ -18,33 +18,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 266
   n=8: 3042 / 3042
   n=9: 69645 / 69645
-  n=10: 356 / 356
-  n=11: 403 / 403
-  n=12: 361 / 361
-  n=13: 397 / 397
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
+  n=10: 1072 / 1072
+  n=11: 1049 / 1049
+  n=12: 952 / 952
+  n=13: 1062 / 1062
+  n=14: 1002 / 1002
+  n=15: 1015 / 1015
+  n=16: 1004 / 1004
+  n=17: 859 / 859
+  n=18: 1126 / 1126
+  n=19: 1078 / 1078
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 971
+  n=30: 980 / 980
 
 Sufficiency test for Diameter at most 2
 Tested connected graphs with up to 8 vertices.
 Found 1243 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?`FF{
+Counterexample graph in graph6 format: F?rvo
+Counterexample graph in graph6 format: G?rdr{
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -57,70 +59,15 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 4155 / 3042
 
 ======================================================================
-Property: Diameter equal to 2
-----------------------------------------------------------------------
-Necessity test for Diameter equal to 2
-Tested 82186 graphs with alpha_od = 1.
-Found 9 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: @
-
-Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 0
-  n=2: 1 / 0
-  n=3: 2 / 1
-  n=4: 4 / 3
-  n=5: 11 / 10
-  n=6: 43 / 42
-  n=7: 266 / 265
-  n=8: 3042 / 3041
-  n=9: 69645 / 69644
-  n=10: 356 / 356
-  n=11: 403 / 403
-  n=12: 361 / 361
-  n=13: 397 / 397
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
-
-Sufficiency test for Diameter equal to 2
-Tested connected graphs with up to 8 vertices.
-Found 1243 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: G?`FF{
-
-Stats (graphs with property / have alpha_od=1):
-  n=1: 0 / 0
-  n=2: 0 / 0
-  n=3: 1 / 1
-  n=4: 4 / 3
-  n=5: 14 / 10
-  n=6: 59 / 42
-  n=7: 373 / 265
-  n=8: 4154 / 3041
-
-======================================================================
 Property: Complement diameter at most 2
 ----------------------------------------------------------------------
 Necessity test for Complement diameter at most 2
-Tested 82186 graphs with alpha_od = 1.
-Found 71117 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: H?qmvvv
+Tested 94456 graphs with alpha_od = 1.
+Found 72688 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCvbvi}
+Counterexample graph in graph6 format: HCZVBzm
+Counterexample graph in graph6 format: HCZJuiv
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -132,33 +79,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 16
   n=8: 3042 / 186
   n=9: 69645 / 5042
-  n=10: 356 / 75
-  n=11: 403 / 85
-  n=12: 361 / 95
-  n=13: 397 / 114
-  n=14: 417 / 150
-  n=15: 429 / 192
-  n=16: 449 / 224
-  n=17: 433 / 243
-  n=18: 470 / 267
-  n=19: 465 / 284
-  n=20: 479 / 309
-  n=21: 475 / 340
-  n=22: 477 / 363
-  n=23: 487 / 365
-  n=24: 494 / 397
-  n=25: 493 / 424
-  n=26: 243 / 209
-  n=27: 496 / 433
-  n=28: 491 / 454
-  n=29: 495 / 458
-  n=30: 361 / 340
+  n=10: 1072 / 438
+  n=11: 1049 / 484
+  n=12: 952 / 487
+  n=13: 1062 / 656
+  n=14: 1002 / 609
+  n=15: 1015 / 750
+  n=16: 1004 / 707
+  n=17: 859 / 632
+  n=18: 1126 / 895
+  n=19: 1078 / 868
+  n=20: 979 / 772
+  n=21: 1011 / 823
+  n=22: 1065 / 940
+  n=23: 1144 / 996
+  n=24: 1000 / 883
+  n=25: 1183 / 1084
+  n=26: 961 / 903
+  n=27: 1035 / 947
+  n=28: 893 / 811
+  n=29: 971 / 896
+  n=30: 980 / 939
 
 Sufficiency test for Complement diameter at most 2
 Tested connected graphs with up to 8 vertices.
 Found 2922 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: GCXeew
+Counterexample graph in graph6 format: G?`Dbw
+Counterexample graph in graph6 format: FCQuo
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -174,10 +123,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Radius 1
 ----------------------------------------------------------------------
 Necessity test for Radius 1
-Tested 82186 graphs with alpha_od = 1.
-Found 73767 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCY^Fr\
+Tested 94456 graphs with alpha_od = 1.
+Found 86019 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HEnfvqv
+Counterexample graph in graph6 format: HCY]vrV
+Counterexample graph in graph6 format: Jjy`keAf\R?
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 0
@@ -189,33 +140,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 98
   n=8: 3042 / 633
   n=9: 69645 / 7627
-  n=10: 356 / 11
-  n=11: 403 / 7
-  n=12: 361 / 2
-  n=13: 397 / 5
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 15
+  n=11: 1049 / 14
+  n=12: 952 / 5
+  n=13: 1062 / 5
+  n=14: 1002 / 4
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Radius 1
 Tested connected graphs with up to 8 vertices.
 Found 485 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?q~~{
+Counterexample graph in graph6 format: FCqnw
+Counterexample graph in graph6 format: ECzw
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
@@ -228,70 +181,15 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 1044 / 633
 
 ======================================================================
-Property: Radius equals diameter
-----------------------------------------------------------------------
-Necessity test for Radius equals diameter
-Tested 82186 graphs with alpha_od = 1.
-Found 8411 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: H?bL]z~
-
-Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 1
-  n=2: 1 / 1
-  n=3: 2 / 1
-  n=4: 4 / 2
-  n=5: 11 / 4
-  n=6: 43 / 22
-  n=7: 266 / 169
-  n=8: 3042 / 2410
-  n=9: 69645 / 62019
-  n=10: 356 / 345
-  n=11: 403 / 396
-  n=12: 361 / 359
-  n=13: 397 / 392
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
-
-Sufficiency test for Radius equals diameter
-Tested connected graphs with up to 8 vertices.
-Found 802 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: GCrrvg
-
-Stats (graphs with property / have alpha_od=1):
-  n=1: 1 / 1
-  n=2: 1 / 1
-  n=3: 1 / 1
-  n=4: 2 / 2
-  n=5: 5 / 4
-  n=6: 28 / 22
-  n=7: 223 / 169
-  n=8: 3151 / 2410
-
-======================================================================
 Property: Min degree at least 2
 ----------------------------------------------------------------------
 Necessity test for Min degree at least 2
-Tested 82186 graphs with alpha_od = 1.
+Tested 94456 graphs with alpha_od = 1.
 Found 331 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: HCe[}~~
+Counterexample graph in graph6 format: H?`e^Z~
+Counterexample graph in graph6 format: H?rNVJ~
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 0
@@ -303,33 +201,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 255
   n=8: 3042 / 2999
   n=9: 69645 / 69379
-  n=10: 356 / 356
-  n=11: 403 / 402
-  n=12: 361 / 361
-  n=13: 397 / 397
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
+  n=10: 1072 / 1072
+  n=11: 1049 / 1048
+  n=12: 952 / 952
+  n=13: 1062 / 1062
+  n=14: 1002 / 1002
+  n=15: 1015 / 1015
+  n=16: 1004 / 1004
+  n=17: 859 / 859
+  n=18: 1126 / 1126
+  n=19: 1078 / 1078
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 971
+  n=30: 980 / 980
 
 Sufficiency test for Min degree at least 2
 Tested connected graphs with up to 8 vertices.
 Found 4719 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?bvv{
+Counterexample graph in graph6 format: FC~vo
+Counterexample graph in graph6 format: GCQdnW
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
@@ -342,127 +242,15 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 7442 / 2999
 
 ======================================================================
-Property: Min degree at least 3
-----------------------------------------------------------------------
-Necessity test for Min degree at least 3
-Tested 82186 graphs with alpha_od = 1.
-Found 16938 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCrJa~~
-
-Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 0
-  n=2: 1 / 0
-  n=3: 2 / 0
-  n=4: 4 / 1
-  n=5: 11 / 3
-  n=6: 43 / 15
-  n=7: 266 / 127
-  n=8: 3042 / 1930
-  n=9: 69645 / 54153
-  n=10: 356 / 292
-  n=11: 403 / 367
-  n=12: 361 / 338
-  n=13: 397 / 383
-  n=14: 417 / 408
-  n=15: 429 / 426
-  n=16: 449 / 448
-  n=17: 433 / 432
-  n=18: 470 / 470
-  n=19: 465 / 464
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
-
-Sufficiency test for Min degree at least 3
-Tested connected graphs with up to 8 vertices.
-Found 686 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: GQjRe[
-
-Stats (graphs with property / have alpha_od=1):
-  n=1: 0 / 0
-  n=2: 0 / 0
-  n=3: 0 / 0
-  n=4: 1 / 1
-  n=5: 3 / 3
-  n=6: 19 / 15
-  n=7: 150 / 127
-  n=8: 2589 / 1930
-
-======================================================================
-Property: Average degree at least 3
-----------------------------------------------------------------------
-Necessity test for Average degree at least 3
-Tested 82186 graphs with alpha_od = 1.
-Found 29 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: BW
-
-Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 0
-  n=2: 1 / 0
-  n=3: 2 / 0
-  n=4: 4 / 1
-  n=5: 11 / 4
-  n=6: 43 / 37
-  n=7: 266 / 257
-  n=8: 3042 / 3042
-  n=9: 69645 / 69645
-  n=10: 356 / 356
-  n=11: 403 / 403
-  n=12: 361 / 361
-  n=13: 397 / 397
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
-
-Sufficiency test for Average degree at least 3
-Tested connected graphs with up to 8 vertices.
-Found 6688 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: GCZba[
-
-Stats (graphs with property / have alpha_od=1):
-  n=1: 0 / 0
-  n=2: 0 / 0
-  n=3: 0 / 0
-  n=4: 1 / 1
-  n=5: 4 / 4
-  n=6: 52 / 37
-  n=7: 503 / 257
-  n=8: 9469 / 3042
-
-======================================================================
 Property: Min degree at least n/2
 ----------------------------------------------------------------------
 Necessity test for Min degree at least n/2
-Tested 82186 graphs with alpha_od = 1.
-Found 80746 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCReu~~
+Tested 94456 graphs with alpha_od = 1.
+Found 92972 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?aNbzm
+Counterexample graph in graph6 format: HCrbTz^
+Counterexample graph in graph6 format: HCXfevu
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 0
@@ -474,33 +262,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 22
   n=8: 3042 / 367
   n=9: 69645 / 1017
-  n=10: 356 / 6
-  n=11: 403 / 1
-  n=12: 361 / 4
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 6
+  n=11: 1049 / 1
+  n=12: 952 / 4
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 2
+  n=25: 1183 / 7
+  n=26: 961 / 0
+  n=27: 1035 / 8
+  n=28: 893 / 11
+  n=29: 971 / 0
+  n=30: 980 / 16
 
 Sufficiency test for Min degree at least n/2
 Tested connected graphs with up to 8 vertices.
 Found 68 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?~vf{
+Counterexample graph in graph6 format: EF~w
+Counterexample graph in graph6 format: GC~vfo
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
@@ -513,70 +303,76 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 424 / 367
 
 ======================================================================
-Property: Min degree at least ceil(n/2)
+Property: Average degree at least 0.7*n
 ----------------------------------------------------------------------
-Necessity test for Min degree at least ceil(n/2)
-Tested 82186 graphs with alpha_od = 1.
-Found 80746 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCReu~~
+Necessity test for Average degree at least 0.7*n
+Tested 94456 graphs with alpha_od = 1.
+Found 94177 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCQddf~
+Counterexample graph in graph6 format: GQy~fW
+Counterexample graph in graph6 format: TcAJSxo_AIJG[aqo?sR_sinkalHXwK``CdXA
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 0
-  n=2: 1 / 1
-  n=3: 2 / 1
-  n=4: 4 / 3
-  n=5: 11 / 3
-  n=6: 43 / 15
-  n=7: 266 / 22
-  n=8: 3042 / 367
-  n=9: 69645 / 1017
-  n=10: 356 / 6
-  n=11: 403 / 1
-  n=12: 361 / 4
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=2: 1 / 0
+  n=3: 2 / 0
+  n=4: 4 / 1
+  n=5: 11 / 2
+  n=6: 43 / 4
+  n=7: 266 / 8
+  n=8: 3042 / 39
+  n=9: 69645 / 225
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
-Sufficiency test for Min degree at least ceil(n/2)
+Sufficiency test for Average degree at least 0.7*n
 Tested connected graphs with up to 8 vertices.
-Found 68 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: G?~vf{
+Found 6 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GF~~~{
+Counterexample graph in graph6 format: FF~~w
+Counterexample graph in graph6 format: GFz~~{
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
-  n=2: 1 / 1
-  n=3: 1 / 1
-  n=4: 3 / 3
-  n=5: 3 / 3
-  n=6: 19 / 15
-  n=7: 29 / 22
-  n=8: 424 / 367
+  n=2: 0 / 0
+  n=3: 0 / 0
+  n=4: 1 / 1
+  n=5: 2 / 2
+  n=6: 4 / 4
+  n=7: 9 / 8
+  n=8: 44 / 39
 
 ======================================================================
 Property: Regular
 ----------------------------------------------------------------------
 Necessity test for Regular
-Tested 82186 graphs with alpha_od = 1.
-Found 82146 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: J|c\dggpCP_
+Tested 94456 graphs with alpha_od = 1.
+Found 94416 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCRVvj~
+Counterexample graph in graph6 format: HEhrvNf
+Counterexample graph in graph6 format: HTnvvnv
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -588,33 +384,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 2
   n=8: 3042 / 10
   n=9: 69645 / 18
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Regular
 Tested connected graphs with up to 8 vertices.
 Found 11 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: GFzvvW
+Counterexample graph in graph6 format: EFz_
+Counterexample graph in graph6 format: EEh_
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -627,13 +425,259 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 17 / 10
 
 ======================================================================
+Property: Even degree
+----------------------------------------------------------------------
+Necessity test for Even degree
+Tested 94456 graphs with alpha_od = 1.
+Found 93853 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?rfe}~
+Counterexample graph in graph6 format: KHS]^rCdZSiD
+Counterexample graph in graph6 format: H?`uTvl
+
+Stats (graphs with alpha_od=1 / satisfy property):
+  n=1: 1 / 1
+  n=2: 1 / 0
+  n=3: 2 / 1
+  n=4: 4 / 1
+  n=5: 11 / 3
+  n=6: 43 / 4
+  n=7: 266 / 13
+  n=8: 3042 / 60
+  n=9: 69645 / 509
+  n=10: 1072 / 7
+  n=11: 1049 / 2
+  n=12: 952 / 2
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
+
+Sufficiency test for Even degree
+Tested connected graphs with up to 8 vertices.
+Found 153 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: FQzUW
+Counterexample graph in graph6 format: F?`vw
+Counterexample graph in graph6 format: G?ouXw
+
+Stats (graphs with property / have alpha_od=1):
+  n=1: 1 / 1
+  n=2: 0 / 0
+  n=3: 1 / 1
+  n=4: 1 / 1
+  n=5: 4 / 3
+  n=6: 8 / 4
+  n=7: 37 / 13
+  n=8: 184 / 60
+
+======================================================================
+Property: Odd degree
+----------------------------------------------------------------------
+Necessity test for Odd degree
+Tested 94456 graphs with alpha_od = 1.
+Found 94391 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCrVvt~
+Counterexample graph in graph6 format: HEhrvNf
+Counterexample graph in graph6 format: H?bvVpy
+
+Stats (graphs with alpha_od=1 / satisfy property):
+  n=1: 1 / 0
+  n=2: 1 / 1
+  n=3: 2 / 0
+  n=4: 4 / 1
+  n=5: 11 / 0
+  n=6: 43 / 5
+  n=7: 266 / 0
+  n=8: 3042 / 57
+  n=9: 69645 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 1
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
+
+Sufficiency test for Odd degree
+Tested connected graphs with up to 8 vertices.
+Found 176 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GEjvc{
+Counterexample graph in graph6 format: G?B~vo
+Counterexample graph in graph6 format: EEzO
+
+Stats (graphs with property / have alpha_od=1):
+  n=1: 0 / 0
+  n=2: 1 / 1
+  n=3: 0 / 0
+  n=4: 2 / 1
+  n=5: 0 / 0
+  n=6: 13 / 5
+  n=7: 0 / 0
+  n=8: 224 / 57
+
+======================================================================
+Property: No twins
+----------------------------------------------------------------------
+Necessity test for No twins
+Tested 94456 graphs with alpha_od = 1.
+Found 13406 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCZ^vq~
+Counterexample graph in graph6 format: HCXfVh}
+Counterexample graph in graph6 format: HCxvfz}
+
+Stats (graphs with alpha_od=1 / satisfy property):
+  n=1: 1 / 1
+  n=2: 1 / 1
+  n=3: 2 / 1
+  n=4: 4 / 2
+  n=5: 11 / 7
+  n=6: 43 / 27
+  n=7: 266 / 183
+  n=8: 3042 / 2287
+  n=9: 69645 / 57359
+  n=10: 1072 / 977
+  n=11: 1049 / 974
+  n=12: 952 / 917
+  n=13: 1062 / 1037
+  n=14: 1002 / 993
+  n=15: 1015 / 1008
+  n=16: 1004 / 997
+  n=17: 859 / 856
+  n=18: 1126 / 1126
+  n=19: 1078 / 1077
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 969
+  n=30: 980 / 980
+
+Sufficiency test for No twins
+Tested connected graphs with up to 8 vertices.
+Found 5518 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GEhffc
+Counterexample graph in graph6 format: G?`ang
+Counterexample graph in graph6 format: FCrJo
+
+Stats (graphs with property / have alpha_od=1):
+  n=1: 1 / 1
+  n=2: 1 / 1
+  n=3: 1 / 1
+  n=4: 3 / 2
+  n=5: 11 / 7
+  n=6: 61 / 27
+  n=7: 507 / 183
+  n=8: 7442 / 2287
+
+======================================================================
+Property: Perfect matching
+----------------------------------------------------------------------
+Necessity test for Perfect matching
+Tested 94456 graphs with alpha_od = 1.
+Found 80333 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCrj~n~
+Counterexample graph in graph6 format: H?qvMr~
+Counterexample graph in graph6 format: HCQv^zz
+
+Stats (graphs with alpha_od=1 / satisfy property):
+  n=1: 1 / 0
+  n=2: 1 / 1
+  n=3: 2 / 0
+  n=4: 4 / 4
+  n=5: 11 / 0
+  n=6: 43 / 43
+  n=7: 266 / 0
+  n=8: 3042 / 3041
+  n=9: 69645 / 0
+  n=10: 1072 / 1072
+  n=11: 1049 / 0
+  n=12: 952 / 952
+  n=13: 1062 / 0
+  n=14: 1002 / 1002
+  n=15: 1015 / 0
+  n=16: 1004 / 1004
+  n=17: 859 / 0
+  n=18: 1126 / 1126
+  n=19: 1078 / 0
+  n=20: 979 / 979
+  n=21: 1011 / 0
+  n=22: 1065 / 1065
+  n=23: 1144 / 0
+  n=24: 1000 / 1000
+  n=25: 1183 / 0
+  n=26: 961 / 961
+  n=27: 1035 / 0
+  n=28: 893 / 893
+  n=29: 971 / 0
+  n=30: 980 / 980
+
+Sufficiency test for Perfect matching
+Tested connected graphs with up to 8 vertices.
+Found 7309 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GCpe^o
+Counterexample graph in graph6 format: G?`ems
+Counterexample graph in graph6 format: G?`Dvw
+
+Stats (graphs with property / have alpha_od=1):
+  n=1: 0 / 0
+  n=2: 1 / 1
+  n=3: 0 / 0
+  n=4: 5 / 4
+  n=5: 0 / 0
+  n=6: 95 / 43
+  n=7: 0 / 0
+  n=8: 10297 / 3041
+
+======================================================================
 Property: Claw-free
 ----------------------------------------------------------------------
 Necessity test for Claw-free
-Tested 82186 graphs with alpha_od = 1.
-Found 79325 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: VFCeJCR@@k@UEHqpaybt]^?ESEuYHegvxVB@qDTMfPM?
+Tested 94456 graphs with alpha_od = 1.
+Found 91595 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: ToDmfxVwb@CTel~sz\@F@bP}SysQoy^\Z?Ws
+Counterexample graph in graph6 format: HQjRfj|
+Counterexample graph in graph6 format: HCXfZz~
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -645,33 +689,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 100
   n=8: 3042 / 434
   n=9: 69645 / 2280
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Claw-free
 Tested connected graphs with up to 8 vertices.
 Found 564 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: FQzmw
+Counterexample graph in graph6 format: ETno
+Counterexample graph in graph6 format: GCp`eo
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -687,10 +733,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Triangle-free
 ----------------------------------------------------------------------
 Necessity test for Triangle-free
-Tested 82186 graphs with alpha_od = 1.
-Found 82172 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCQfDxv
+Tested 94456 graphs with alpha_od = 1.
+Found 94442 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCXm^a}
+Counterexample graph in graph6 format: HCZJzzu
+Counterexample graph in graph6 format: H?bvVpy
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -702,33 +750,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 2
   n=8: 3042 / 3
   n=9: 69645 / 3
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Triangle-free
 Tested connected graphs with up to 8 vertices.
 Found 346 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?zTb_
+Counterexample graph in graph6 format: F?ov_
+Counterexample graph in graph6 format: E?zO
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -744,10 +794,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: No induced P4
 ----------------------------------------------------------------------
 Necessity test for No induced P4
-Tested 82186 graphs with alpha_od = 1.
-Found 81717 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: [jOQWbjX{dHIP\{De}MM~zD`rS_Zdjql_Jv__SatO{F]~a[GMgKXvfX_GpRMbdHD
+Tested 94456 graphs with alpha_od = 1.
+Found 93987 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?o~TvV
+Counterexample graph in graph6 format: H?qrdZ^
+Counterexample graph in graph6 format: YkWNZ^EPSRgsfGI~Lsmp]obK{BiLVxeqIII_oRXGtWNbAmHEjcD~VEF_
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -759,33 +811,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 44
   n=8: 3042 / 111
   n=9: 69645 / 279
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for No induced P4
 Tested connected graphs with up to 8 vertices.
 Found 215 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?~vfw
+Counterexample graph in graph6 format: F?aNw
+Counterexample graph in graph6 format: E?bw
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -801,10 +855,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: No induced C4
 ----------------------------------------------------------------------
 Necessity test for No induced C4
-Tested 82186 graphs with alpha_od = 1.
-Found 80587 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCQfFf{
+Tested 94456 graphs with alpha_od = 1.
+Found 92857 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCRbcrn
+Counterexample graph in graph6 format: H?qvVt~
+Counterexample graph in graph6 format: HCQtn^}
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -816,33 +872,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 62
   n=8: 3042 / 240
   n=9: 69645 / 1261
-  n=10: 356 / 2
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 2
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for No induced C4
 Tested connected graphs with up to 8 vertices.
 Found 2079 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?BDts
+Counterexample graph in graph6 format: F?bLw
+Counterexample graph in graph6 format: G?qacW
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -858,67 +916,73 @@ Stats (graphs with property / have alpha_od=1):
 Property: No induced K4
 ----------------------------------------------------------------------
 Necessity test for No induced K4
-Tested 82186 graphs with alpha_od = 1.
-Found 80587 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCQfFf{
+Tested 94456 graphs with alpha_od = 1.
+Found 82383 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCZT|~^
+Counterexample graph in graph6 format: WZB\|qZWp[@vv}FiwfNlM|_lo^UVfHR?fqApVpcnasd{ApI
+Counterexample graph in graph6 format: HEhffY~
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
   n=2: 1 / 1
   n=3: 2 / 2
   n=4: 4 / 3
-  n=5: 11 / 8
-  n=6: 43 / 19
-  n=7: 266 / 62
-  n=8: 3042 / 240
-  n=9: 69645 / 1261
-  n=10: 356 / 2
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=5: 11 / 7
+  n=6: 43 / 22
+  n=7: 266 / 98
+  n=8: 3042 / 746
+  n=9: 69645 / 10123
+  n=10: 1072 / 380
+  n=11: 1049 / 253
+  n=12: 952 / 133
+  n=13: 1062 / 119
+  n=14: 1002 / 72
+  n=15: 1015 / 59
+  n=16: 1004 / 26
+  n=17: 859 / 14
+  n=18: 1126 / 8
+  n=19: 1078 / 3
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 2
+  n=25: 1183 / 0
+  n=26: 961 / 1
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for No induced K4
 Tested connected graphs with up to 8 vertices.
-Found 2079 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: G?BDts
+Found 5370 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GCdbMg
+Counterexample graph in graph6 format: G?Bfe{
+Counterexample graph in graph6 format: F?qtw
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
   n=2: 1 / 1
   n=3: 2 / 2
   n=4: 5 / 3
-  n=5: 16 / 8
-  n=6: 63 / 19
-  n=7: 313 / 62
-  n=8: 2014 / 240
+  n=5: 17 / 7
+  n=6: 82 / 22
+  n=7: 536 / 98
+  n=8: 5606 / 746
 
 ======================================================================
 Property: No induced odd cycles >= 5
 ----------------------------------------------------------------------
 Necessity test for No induced odd cycles >= 5
-Tested 82186 graphs with alpha_od = 1.
-Found 53942 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCY]vHx
+Tested 94456 graphs with alpha_od = 1.
+Found 66187 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCZLfV^
+Counterexample graph in graph6 format: T{nfsIO?LAW@cKcdPbMB?aIedGVM_LEWKCP{
+Counterexample graph in graph6 format: HQjRaxv
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -930,33 +994,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 204
   n=8: 3042 / 1809
   n=9: 69645 / 26107
-  n=10: 356 / 41
-  n=11: 403 / 20
-  n=12: 361 / 6
-  n=13: 397 / 1
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 59
+  n=11: 1049 / 26
+  n=12: 952 / 7
+  n=13: 1062 / 1
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for No induced odd cycles >= 5
 Tested connected graphs with up to 8 vertices.
 Found 6607 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: GCre^S
+Counterexample graph in graph6 format: G?BDn{
+Counterexample graph in graph6 format: F?qvg
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -969,70 +1035,15 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 7816 / 1809
 
 ======================================================================
-Property: Girth at least 4
-----------------------------------------------------------------------
-Necessity test for Girth at least 4
-Tested 82186 graphs with alpha_od = 1.
-Found 82172 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCQfDxv
-
-Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 1
-  n=2: 1 / 1
-  n=3: 2 / 1
-  n=4: 4 / 1
-  n=5: 11 / 1
-  n=6: 43 / 1
-  n=7: 266 / 2
-  n=8: 3042 / 3
-  n=9: 69645 / 3
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
-
-Sufficiency test for Girth at least 4
-Tested connected graphs with up to 8 vertices.
-Found 346 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: G?zTb_
-
-Stats (graphs with property / have alpha_od=1):
-  n=1: 1 / 1
-  n=2: 1 / 1
-  n=3: 1 / 1
-  n=4: 3 / 1
-  n=5: 6 / 1
-  n=6: 19 / 1
-  n=7: 59 / 2
-  n=8: 267 / 3
-
-======================================================================
 Property: Girth at least 5
 ----------------------------------------------------------------------
 Necessity test for Girth at least 5
-Tested 82186 graphs with alpha_od = 1.
-Found 82182 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCvb~~~
+Tested 94456 graphs with alpha_od = 1.
+Found 94452 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: [PeM\k\gEaNKoOjFQH~qsxyocB\}ro{sfAW|vtv[]VcEFFO?lhMEfkibOKFAO{Zi
+Counterexample graph in graph6 format: LQa^fRP|FW?ic`
+Counterexample graph in graph6 format: H?bvVpy
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -1044,33 +1055,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 0
   n=8: 3042 / 0
   n=9: 69645 / 0
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Girth at least 5
 Tested connected graphs with up to 8 vertices.
 Found 78 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: F?AFo
+Counterexample graph in graph6 format: DCw
+Counterexample graph in graph6 format: G??FCw
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -1086,10 +1099,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Bipartite
 ----------------------------------------------------------------------
 Necessity test for Bipartite
-Tested 82186 graphs with alpha_od = 1.
-Found 82182 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCvb~~~
+Tested 94456 graphs with alpha_od = 1.
+Found 94452 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCrU~z}
+Counterexample graph in graph6 format: LQa^fRP|FW?ic`
+Counterexample graph in graph6 format: H?bvVpy
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -1101,33 +1116,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 0
   n=8: 3042 / 0
   n=9: 69645 / 0
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Bipartite
 Tested connected graphs with up to 8 vertices.
 Found 250 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?`DE_
+Counterexample graph in graph6 format: F?BFo
+Counterexample graph in graph6 format: DQo
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -1143,10 +1160,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Chordal
 ----------------------------------------------------------------------
 Necessity test for Chordal
-Tested 82186 graphs with alpha_od = 1.
-Found 80907 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCrltz|
+Tested 94456 graphs with alpha_od = 1.
+Found 93177 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?zne~z
+Counterexample graph in graph6 format: HCRTv^^
+Counterexample graph in graph6 format: HCvdn]~
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -1158,33 +1177,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 53
   n=8: 3042 / 200
   n=9: 69645 / 993
-  n=10: 356 / 2
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 2
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Chordal
 Tested connected graphs with up to 8 vertices.
 Found 1684 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: GCQSnO
+Counterexample graph in graph6 format: FCdew
+Counterexample graph in graph6 format: F??Fw
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -1200,10 +1221,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Line graph
 ----------------------------------------------------------------------
 Necessity test for Line graph
-Tested 82186 graphs with alpha_od = 1.
-Found 82028 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCx}}~^
+Tested 94456 graphs with alpha_od = 1.
+Found 94298 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: TBFmeodaCEiOoA`?KPcCarkogfPS{CoBE_yL
+Counterexample graph in graph6 format: HCZT|z^
+Counterexample graph in graph6 format: H?rfm~|
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -1215,33 +1238,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 22
   n=8: 3042 / 38
   n=9: 69645 / 69
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Line graph
 Tested connected graphs with up to 8 vertices.
 Found 268 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: FCdeG
+Counterexample graph in graph6 format: EEio
+Counterexample graph in graph6 format: GCQbTg
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -1257,10 +1282,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Strongly regular
 ----------------------------------------------------------------------
 Necessity test for Strongly regular
-Tested 82186 graphs with alpha_od = 1.
-Found 82181 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: H?zT~y~
+Tested 94456 graphs with alpha_od = 1.
+Found 94451 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: [PeM\k\gEaNKoOjFQH~qsxyocB\}ro{sfAW|vtv[]VcEFFO?lhMEfkibOKFAO{Zi
+Counterexample graph in graph6 format: HEhvTnt
+Counterexample graph in graph6 format: H?bvVpy
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 0
@@ -1272,33 +1299,34 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 0
   n=8: 3042 / 1
   n=9: 69645 / 1
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Strongly regular
 Tested connected graphs with up to 8 vertices.
 Found 2 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: EFz_
+Counterexample graph in graph6 format: G?~vf_
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
@@ -1314,10 +1342,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Planar
 ----------------------------------------------------------------------
 Necessity test for Planar
-Tested 82186 graphs with alpha_od = 1.
-Found 79891 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HQjVfvz
+Tested 94456 graphs with alpha_od = 1.
+Found 92157 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: Tu_TCZa_DAdcGcO_q`[bBjSCNEEg}LODBXDS
+Counterexample graph in graph6 format: HCxv^hz
+Counterexample graph in graph6 format: HEhvFv]
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -1329,33 +1359,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 131
   n=8: 3042 / 499
   n=9: 69645 / 1613
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 4
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Planar
 Tested connected graphs with up to 8 vertices.
 Found 6067 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: GCpdrw
+Counterexample graph in graph6 format: G?BDnO
+Counterexample graph in graph6 format: F?qv_
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -1371,10 +1403,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Edge connectivity at least 2
 ----------------------------------------------------------------------
 Necessity test for Edge connectivity at least 2
-Tested 82186 graphs with alpha_od = 1.
+Tested 94456 graphs with alpha_od = 1.
 Found 331 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: HCe[}~~
+Counterexample graph in graph6 format: H?`e^Z~
+Counterexample graph in graph6 format: H?rNVJ~
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 0
@@ -1386,33 +1420,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 255
   n=8: 3042 / 2999
   n=9: 69645 / 69379
-  n=10: 356 / 356
-  n=11: 403 / 402
-  n=12: 361 / 361
-  n=13: 397 / 397
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
+  n=10: 1072 / 1072
+  n=11: 1049 / 1048
+  n=12: 952 / 952
+  n=13: 1062 / 1062
+  n=14: 1002 / 1002
+  n=15: 1015 / 1015
+  n=16: 1004 / 1004
+  n=17: 859 / 859
+  n=18: 1126 / 1126
+  n=19: 1078 / 1078
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 971
+  n=30: 980 / 980
 
 Sufficiency test for Edge connectivity at least 2
 Tested connected graphs with up to 8 vertices.
 Found 4674 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?bmvo
+Counterexample graph in graph6 format: FErvg
+Counterexample graph in graph6 format: GCQfn{
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
@@ -1425,13 +1461,76 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 7403 / 2999
 
 ======================================================================
+Property: Vertex connectivity at least 2
+----------------------------------------------------------------------
+Necessity test for Vertex connectivity at least 2
+Tested 94456 graphs with alpha_od = 1.
+Found 434 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?Benb~
+Counterexample graph in graph6 format: HCRUuv~
+Counterexample graph in graph6 format: FTm~w
+
+Stats (graphs with alpha_od=1 / satisfy property):
+  n=1: 1 / 0
+  n=2: 1 / 0
+  n=3: 2 / 1
+  n=4: 4 / 3
+  n=5: 11 / 8
+  n=6: 43 / 37
+  n=7: 266 / 248
+  n=8: 3042 / 2980
+  n=9: 69645 / 69304
+  n=10: 1072 / 1072
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
+
+Sufficiency test for Vertex connectivity at least 2
+Tested connected graphs with up to 8 vertices.
+Found 4384 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: G?qfb{
+Counterexample graph in graph6 format: FEzeW
+Counterexample graph in graph6 format: GCRbjw
+
+Stats (graphs with property / have alpha_od=1):
+  n=1: 0 / 0
+  n=2: 0 / 0
+  n=3: 1 / 1
+  n=4: 3 / 3
+  n=5: 10 / 8
+  n=6: 56 / 37
+  n=7: 468 / 248
+  n=8: 7123 / 2980
+
+======================================================================
 Property: Complement connected
 ----------------------------------------------------------------------
 Necessity test for Complement connected
-Tested 82186 graphs with alpha_od = 1.
-Found 9202 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: H?qfR^~
+Tested 94456 graphs with alpha_od = 1.
+Found 9220 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCQdnj~
+Counterexample graph in graph6 format: H?ovfr~
+Counterexample graph in graph6 format: H?qmvb~
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -1443,33 +1542,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 150
   n=8: 3042 / 2310
   n=9: 69645 / 61360
-  n=10: 356 / 345
-  n=11: 403 / 396
-  n=12: 361 / 359
-  n=13: 397 / 392
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
+  n=10: 1072 / 1057
+  n=11: 1049 / 1035
+  n=12: 952 / 947
+  n=13: 1062 / 1057
+  n=14: 1002 / 998
+  n=15: 1015 / 1015
+  n=16: 1004 / 1004
+  n=17: 859 / 859
+  n=18: 1126 / 1126
+  n=19: 1078 / 1078
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 971
+  n=30: 980 / 980
 
 Sufficiency test for Complement connected
 Tested connected graphs with up to 8 vertices.
 Found 8150 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: GCRcpw
+Counterexample graph in graph6 format: G?BfFw
+Counterexample graph in graph6 format: F?q~g
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -1482,183 +1583,192 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 9888 / 2310
 
 ======================================================================
-Property: Independence number = 2
+Property: Self complementary
 ----------------------------------------------------------------------
-Necessity test for Independence number = 2
-Tested 82186 graphs with alpha_od = 1.
-Found 79939 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: GCRtvg
+Necessity test for Self complementary
+Tested 94456 graphs with alpha_od = 1.
+Found 94435 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?`c~rm
+Counterexample graph in graph6 format: HEhrvNf
+Counterexample graph in graph6 format: MUtedIVhF_EGd@uI_
 
 Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 0
+  n=1: 1 / 1
   n=2: 1 / 0
-  n=3: 2 / 1
-  n=4: 4 / 3
-  n=5: 11 / 9
-  n=6: 43 / 26
-  n=7: 266 / 87
-  n=8: 3042 / 354
-  n=9: 69645 / 1767
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
-
-Sufficiency test for Independence number = 2
-Tested connected graphs with up to 8 vertices.
-Found 78 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: FQjUg
-
-Stats (graphs with property / have alpha_od=1):
-  n=1: 0 / 0
-  n=2: 0 / 0
-  n=3: 1 / 1
-  n=4: 4 / 3
-  n=5: 11 / 9
-  n=6: 34 / 26
-  n=7: 103 / 87
-  n=8: 405 / 354
-
-======================================================================
-Property: alpha(G) + alpha_od(G) = n
-----------------------------------------------------------------------
-Necessity test for alpha(G) + alpha_od(G) = n
-Tested 82186 graphs with alpha_od = 1.
-Found 82184 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: H?zT~y~
-
-Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 0
-  n=2: 1 / 1
-  n=3: 2 / 1
+  n=3: 2 / 0
   n=4: 4 / 0
-  n=5: 11 / 0
+  n=5: 11 / 1
   n=6: 43 / 0
   n=7: 266 / 0
-  n=8: 3042 / 0
-  n=9: 69645 / 0
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=8: 3042 / 2
+  n=9: 69645 / 17
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
-Sufficiency test for alpha(G) + alpha_od(G) = n
+Sufficiency test for Self complementary
 Tested connected graphs with up to 8 vertices.
-Found 5 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: CF
+Found 10 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: DEk
+Counterexample graph in graph6 format: CU
+Counterexample graph in graph6 format: G?o|Y{
+
+Stats (graphs with property / have alpha_od=1):
+  n=1: 1 / 1
+  n=2: 0 / 0
+  n=3: 0 / 0
+  n=4: 1 / 0
+  n=5: 2 / 1
+  n=6: 0 / 0
+  n=7: 0 / 0
+  n=8: 10 / 2
+
+======================================================================
+Property: alpha(G) <= n/2
+----------------------------------------------------------------------
+Necessity test for alpha(G) <= n/2
+Tested 94456 graphs with alpha_od = 1.
+Found 243 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?BvVr^
+Counterexample graph in graph6 format: H?Bcrxy
+Counterexample graph in graph6 format: H?B@|nz
+
+Stats (graphs with alpha_od=1 / satisfy property):
+  n=1: 1 / 0
+  n=2: 1 / 1
+  n=3: 2 / 1
+  n=4: 4 / 4
+  n=5: 11 / 10
+  n=6: 43 / 43
+  n=7: 266 / 258
+  n=8: 3042 / 3041
+  n=9: 69645 / 69414
+  n=10: 1072 / 1072
+  n=11: 1049 / 1049
+  n=12: 952 / 952
+  n=13: 1062 / 1062
+  n=14: 1002 / 1002
+  n=15: 1015 / 1015
+  n=16: 1004 / 1004
+  n=17: 859 / 859
+  n=18: 1126 / 1126
+  n=19: 1078 / 1078
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 971
+  n=30: 980 / 980
+
+Sufficiency test for alpha(G) <= n/2
+Tested connected graphs with up to 8 vertices.
+Found 7964 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GCRTvo
+Counterexample graph in graph6 format: G?bFJo
+Counterexample graph in graph6 format: FCZbO
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
   n=2: 1 / 1
   n=3: 1 / 1
-  n=4: 1 / 0
-  n=5: 1 / 0
-  n=6: 1 / 0
-  n=7: 1 / 0
-  n=8: 1 / 0
+  n=4: 5 / 4
+  n=5: 12 / 10
+  n=6: 98 / 43
+  n=7: 628 / 258
+  n=8: 10577 / 3041
 
 ======================================================================
-Property: alpha(G) <= 2
+Property: alpha(G) = 1
 ----------------------------------------------------------------------
-Necessity test for alpha(G) <= 2
-Tested 82186 graphs with alpha_od = 1.
-Found 79930 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCZH~bf
+Necessity test for alpha(G) = 1
+Tested 94456 graphs with alpha_od = 1.
+Found 94447 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HQjndzl
+Counterexample graph in graph6 format: HCZJzzu
+Counterexample graph in graph6 format: HTnvvnv
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
   n=2: 1 / 1
-  n=3: 2 / 2
-  n=4: 4 / 4
-  n=5: 11 / 10
-  n=6: 43 / 27
-  n=7: 266 / 88
-  n=8: 3042 / 355
-  n=9: 69645 / 1768
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=3: 2 / 1
+  n=4: 4 / 1
+  n=5: 11 / 1
+  n=6: 43 / 1
+  n=7: 266 / 1
+  n=8: 3042 / 1
+  n=9: 69645 / 1
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
-Sufficiency test for alpha(G) <= 2
+Sufficiency test for alpha(G) = 1
 Tested connected graphs with up to 8 vertices.
-Found 78 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: FQjUg
+Found 0 counterexamples.
+No counterexamples found. The property appears sufficient.
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
   n=2: 1 / 1
-  n=3: 2 / 2
-  n=4: 5 / 4
-  n=5: 12 / 10
-  n=6: 35 / 27
-  n=7: 104 / 88
-  n=8: 406 / 355
+  n=3: 1 / 1
+  n=4: 1 / 1
+  n=5: 1 / 1
+  n=6: 1 / 1
+  n=7: 1 / 1
+  n=8: 1 / 1
 
 ======================================================================
 Property: alpha(G^2) == 1
 ----------------------------------------------------------------------
 Necessity test for alpha(G^2) == 1
-Tested 82186 graphs with alpha_od = 1.
+Tested 94456 graphs with alpha_od = 1.
 Found 1 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: @
 
 Stats (graphs with alpha_od=1 / satisfy property):
@@ -1671,33 +1781,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 266
   n=8: 3042 / 3042
   n=9: 69645 / 69645
-  n=10: 356 / 356
-  n=11: 403 / 403
-  n=12: 361 / 361
-  n=13: 397 / 397
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
+  n=10: 1072 / 1072
+  n=11: 1049 / 1049
+  n=12: 952 / 952
+  n=13: 1062 / 1062
+  n=14: 1002 / 1002
+  n=15: 1015 / 1015
+  n=16: 1004 / 1004
+  n=17: 859 / 859
+  n=18: 1126 / 1126
+  n=19: 1078 / 1078
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 971
+  n=30: 980 / 980
 
 Sufficiency test for alpha(G^2) == 1
 Tested connected graphs with up to 8 vertices.
 Found 1243 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?`FF{
+Counterexample graph in graph6 format: F?rvo
+Counterexample graph in graph6 format: G?rdr{
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
@@ -1713,7 +1825,7 @@ Stats (graphs with property / have alpha_od=1):
 Property: chi_so(G) = n
 ----------------------------------------------------------------------
 Necessity test for chi_so(G) = n
-Tested 82186 graphs with alpha_od = 1.
+Tested 94456 graphs with alpha_od = 1.
 Found 0 counterexamples.
 No counterexamples found. The property appears necessary.
 
@@ -1727,27 +1839,27 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 0
   n=8: 3042 / 0
   n=9: 69645 / 0
-  n=10: 356 / 0
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 0
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for chi_so(G) = n
 Tested connected graphs with up to 8 vertices.
@@ -1765,13 +1877,15 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 0 / 0
 
 ======================================================================
-Property: Chromatic number at most 3
+Property: chi(G) <= 3
 ----------------------------------------------------------------------
-Necessity test for Chromatic number at most 3
-Tested 82186 graphs with alpha_od = 1.
-Found 66892 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCZJ~ZN
+Necessity test for chi(G) <= 3
+Tested 94456 graphs with alpha_od = 1.
+Found 67433 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HQy~ez{
+Counterexample graph in graph6 format: H?`c~Zx
+Counterexample graph in graph6 format: HCZUvn}
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -1783,33 +1897,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 84
   n=8: 3042 / 555
   n=9: 69645 / 5786
-  n=10: 356 / 19
-  n=11: 403 / 0
-  n=12: 361 / 0
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 194
+  n=11: 1049 / 0
+  n=12: 952 / 0
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
-Sufficiency test for Chromatic number at most 3
+Sufficiency test for chi(G) <= 3
 Tested connected graphs with up to 8 vertices.
 Found 5170 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: G?Beuo
+Counterexample graph in graph6 format: F?qtw
+Counterexample graph in graph6 format: G?`rnw
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
@@ -1822,184 +1938,137 @@ Stats (graphs with property / have alpha_od=1):
   n=8: 5218 / 555
 
 ======================================================================
-Property: Dist-2 pairs have at least 2 common neighbors
+Property: Density at least 0.6
 ----------------------------------------------------------------------
-Necessity test for Dist-2 pairs have at least 2 common neighbors
-Tested 82186 graphs with alpha_od = 1.
-Found 63875 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HEhvD~}
+Necessity test for Density at least 0.6
+Tested 94456 graphs with alpha_od = 1.
+Found 63092 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HCQUdzv
+Counterexample graph in graph6 format: HCZM^`~
+Counterexample graph in graph6 format: KUWTElIZBgXc
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
-  n=2: 1 / 1
-  n=3: 2 / 1
-  n=4: 4 / 3
-  n=5: 11 / 5
-  n=6: 43 / 19
-  n=7: 266 / 87
-  n=8: 3042 / 813
-  n=9: 69645 / 14981
-  n=10: 356 / 26
-  n=11: 403 / 36
-  n=12: 361 / 30
-  n=13: 397 / 37
-  n=14: 417 / 34
-  n=15: 429 / 44
-  n=16: 449 / 53
-  n=17: 433 / 63
-  n=18: 470 / 62
-  n=19: 465 / 78
-  n=20: 479 / 115
-  n=21: 475 / 129
-  n=22: 477 / 123
-  n=23: 487 / 156
-  n=24: 494 / 154
-  n=25: 493 / 197
-  n=26: 243 / 102
-  n=27: 496 / 237
-  n=28: 491 / 241
-  n=29: 495 / 271
-  n=30: 361 / 212
-
-Sufficiency test for Dist-2 pairs have at least 2 common neighbors
-Tested connected graphs with up to 8 vertices.
-Found 513 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: G?br~{
-
-Stats (graphs with property / have alpha_od=1):
-  n=1: 1 / 1
-  n=2: 1 / 1
-  n=3: 1 / 1
-  n=4: 3 / 3
-  n=5: 7 / 5
-  n=6: 30 / 19
-  n=7: 141 / 87
-  n=8: 1259 / 813
-
-======================================================================
-Property: Dense (>50% edges)
-----------------------------------------------------------------------
-Necessity test for Dense (>50% edges)
-Tested 82186 graphs with alpha_od = 1.
-Found 11616 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: H?bFHz^
-
-Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 0
   n=2: 1 / 1
   n=3: 2 / 2
   n=4: 4 / 4
   n=5: 11 / 10
-  n=6: 43 / 42
-  n=7: 266 / 257
-  n=8: 3042 / 2780
-  n=9: 69645 / 62497
-  n=10: 356 / 271
-  n=11: 403 / 307
-  n=12: 361 / 222
-  n=13: 397 / 252
-  n=14: 417 / 272
-  n=15: 429 / 250
-  n=16: 449 / 234
-  n=17: 433 / 211
-  n=18: 470 / 248
-  n=19: 465 / 262
-  n=20: 479 / 242
-  n=21: 475 / 245
-  n=22: 477 / 240
-  n=23: 487 / 241
-  n=24: 494 / 245
-  n=25: 493 / 247
-  n=26: 243 / 114
-  n=27: 496 / 244
-  n=28: 491 / 223
-  n=29: 495 / 231
-  n=30: 361 / 176
+  n=6: 43 / 37
+  n=7: 266 / 174
+  n=8: 3042 / 1761
+  n=9: 69645 / 28920
+  n=10: 1072 / 67
+  n=11: 1049 / 58
+  n=12: 952 / 31
+  n=13: 1062 / 30
+  n=14: 1002 / 15
+  n=15: 1015 / 9
+  n=16: 1004 / 12
+  n=17: 859 / 7
+  n=18: 1126 / 9
+  n=19: 1078 / 10
+  n=20: 979 / 10
+  n=21: 1011 / 9
+  n=22: 1065 / 12
+  n=23: 1144 / 13
+  n=24: 1000 / 13
+  n=25: 1183 / 22
+  n=26: 961 / 22
+  n=27: 1035 / 25
+  n=28: 893 / 22
+  n=29: 971 / 26
+  n=30: 980 / 32
 
-Sufficiency test for Dense (>50% edges)
+Sufficiency test for Density at least 0.6
 Tested connected graphs with up to 8 vertices.
-Found 2768 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: GFzvVo
+Found 784 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GEjvc{
+Counterexample graph in graph6 format: G?rL~{
+Counterexample graph in graph6 format: F?~~w
 
 Stats (graphs with property / have alpha_od=1):
-  n=1: 0 / 0
+  n=1: 1 / 1
   n=2: 1 / 1
   n=3: 2 / 2
   n=4: 4 / 4
   n=5: 13 / 10
-  n=6: 74 / 42
-  n=7: 503 / 257
-  n=8: 5267 / 2780
+  n=6: 52 / 37
+  n=7: 239 / 174
+  n=8: 2462 / 1761
 
 ======================================================================
-Property: Domination number 2
+Property: Density between 0.4 and 0.6
 ----------------------------------------------------------------------
-Necessity test for Domination number 2
-Tested 82186 graphs with alpha_od = 1.
-Found 12920 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: HCrtrz~
+Necessity test for Density between 0.4 and 0.6
+Tested 94456 graphs with alpha_od = 1.
+Found 37632 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: HQjvvr^
+Counterexample graph in graph6 format: UOdCBFwWKg\`DSOpO`aG?~WcFaiCweeRBI?WgCw_
+Counterexample graph in graph6 format: HQjfN^~
 
 Stats (graphs with alpha_od=1 / satisfy property):
-  n=1: 1 / 0
+  n=1: 1 / 1
   n=2: 1 / 0
   n=3: 2 / 0
-  n=4: 4 / 1
-  n=5: 11 / 3
-  n=6: 43 / 21
-  n=7: 266 / 168
-  n=8: 3042 / 2405
-  n=9: 69645 / 61864
-  n=10: 356 / 342
-  n=11: 403 / 381
-  n=12: 361 / 338
-  n=13: 397 / 362
-  n=14: 417 / 361
-  n=15: 429 / 352
-  n=16: 449 / 338
-  n=17: 433 / 297
-  n=18: 470 / 299
-  n=19: 465 / 272
-  n=20: 479 / 264
-  n=21: 475 / 220
-  n=22: 477 / 200
-  n=23: 487 / 181
-  n=24: 494 / 156
-  n=25: 493 / 121
-  n=26: 243 / 55
-  n=27: 496 / 95
-  n=28: 491 / 65
-  n=29: 495 / 66
-  n=30: 361 / 39
+  n=4: 4 / 0
+  n=5: 11 / 4
+  n=6: 43 / 17
+  n=7: 266 / 92
+  n=8: 3042 / 1281
+  n=9: 69645 / 40722
+  n=10: 1072 / 1032
+  n=11: 1049 / 1014
+  n=12: 952 / 918
+  n=13: 1062 / 1022
+  n=14: 1002 / 970
+  n=15: 1015 / 977
+  n=16: 1004 / 955
+  n=17: 859 / 684
+  n=18: 1126 / 690
+  n=19: 1078 / 684
+  n=20: 979 / 550
+  n=21: 1011 / 540
+  n=22: 1065 / 527
+  n=23: 1144 / 548
+  n=24: 1000 / 556
+  n=25: 1183 / 570
+  n=26: 961 / 318
+  n=27: 1035 / 554
+  n=28: 893 / 567
+  n=29: 971 / 580
+  n=30: 980 / 451
 
-Sufficiency test for Domination number 2
+Sufficiency test for Density between 0.4 and 0.6
 Tested connected graphs with up to 8 vertices.
-Found 7307 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: GCpev_
+Found 6205 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: GCZfN[
+Counterexample graph in graph6 format: G?`an[
+Counterexample graph in graph6 format: FCRfG
 
 Stats (graphs with property / have alpha_od=1):
-  n=1: 0 / 0
+  n=1: 1 / 1
   n=2: 0 / 0
   n=3: 0 / 0
-  n=4: 2 / 1
-  n=5: 10 / 3
-  n=6: 76 / 21
-  n=7: 655 / 168
-  n=8: 9162 / 2405
+  n=4: 2 / 0
+  n=5: 13 / 4
+  n=6: 74 / 17
+  n=7: 503 / 92
+  n=8: 7007 / 1281
 
 ======================================================================
 Property: Hamiltonian
 ----------------------------------------------------------------------
 Necessity test for Hamiltonian
-Tested 82186 graphs with alpha_od = 1.
-Found 960 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: GCrUv{
+Tested 94456 graphs with alpha_od = 1.
+Found 961 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?qfVZ~
+Counterexample graph in graph6 format: G?quZw
+Counterexample graph in graph6 format: H?rfF^~
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 0
@@ -2011,33 +2080,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 238
   n=8: 3042 / 2925
   n=9: 69645 / 68849
-  n=10: 356 / 353
-  n=11: 403 / 402
-  n=12: 361 / 361
-  n=13: 397 / 397
-  n=14: 417 / 417
-  n=15: 429 / 429
-  n=16: 449 / 449
-  n=17: 433 / 433
-  n=18: 470 / 470
-  n=19: 465 / 465
-  n=20: 479 / 479
-  n=21: 475 / 475
-  n=22: 477 / 477
-  n=23: 487 / 487
-  n=24: 494 / 494
-  n=25: 493 / 493
-  n=26: 243 / 243
-  n=27: 496 / 496
-  n=28: 491 / 491
-  n=29: 495 / 495
-  n=30: 361 / 361
+  n=10: 1072 / 1068
+  n=11: 1049 / 1048
+  n=12: 952 / 952
+  n=13: 1062 / 1062
+  n=14: 1002 / 1002
+  n=15: 1015 / 1015
+  n=16: 1004 / 1004
+  n=17: 859 / 859
+  n=18: 1126 / 1126
+  n=19: 1078 / 1078
+  n=20: 979 / 979
+  n=21: 1011 / 1011
+  n=22: 1065 / 1065
+  n=23: 1144 / 1144
+  n=24: 1000 / 1000
+  n=25: 1183 / 1183
+  n=26: 961 / 961
+  n=27: 1035 / 1035
+  n=28: 893 / 893
+  n=29: 971 / 971
+  n=30: 980 / 980
 
 Sufficiency test for Hamiltonian
 Tested connected graphs with up to 8 vertices.
 Found 3429 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: GCZL]{
+Counterexample graph in graph6 format: G?ren{
+Counterexample graph in graph6 format: FEhbo
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 0 / 0
@@ -2053,10 +2124,12 @@ Stats (graphs with property / have alpha_od=1):
 Property: Eulerian
 ----------------------------------------------------------------------
 Necessity test for Eulerian
-Tested 82186 graphs with alpha_od = 1.
-Found 81587 counterexamples.
-Showing a random counterexample:
-Counterexample graph in graph6 format: H?qv@vU
+Tested 94456 graphs with alpha_od = 1.
+Found 93853 counterexamples.
+Showing 3 random counterexamples:
+Counterexample graph in graph6 format: H?rfe}~
+Counterexample graph in graph6 format: KHS]^rCdZSiD
+Counterexample graph in graph6 format: H?`uTvl
 
 Stats (graphs with alpha_od=1 / satisfy property):
   n=1: 1 / 1
@@ -2068,33 +2141,35 @@ Stats (graphs with alpha_od=1 / satisfy property):
   n=7: 266 / 13
   n=8: 3042 / 60
   n=9: 69645 / 509
-  n=10: 356 / 4
-  n=11: 403 / 2
-  n=12: 361 / 1
-  n=13: 397 / 0
-  n=14: 417 / 0
-  n=15: 429 / 0
-  n=16: 449 / 0
-  n=17: 433 / 0
-  n=18: 470 / 0
-  n=19: 465 / 0
-  n=20: 479 / 0
-  n=21: 475 / 0
-  n=22: 477 / 0
-  n=23: 487 / 0
-  n=24: 494 / 0
-  n=25: 493 / 0
-  n=26: 243 / 0
-  n=27: 496 / 0
-  n=28: 491 / 0
-  n=29: 495 / 0
-  n=30: 361 / 0
+  n=10: 1072 / 7
+  n=11: 1049 / 2
+  n=12: 952 / 2
+  n=13: 1062 / 0
+  n=14: 1002 / 0
+  n=15: 1015 / 0
+  n=16: 1004 / 0
+  n=17: 859 / 0
+  n=18: 1126 / 0
+  n=19: 1078 / 0
+  n=20: 979 / 0
+  n=21: 1011 / 0
+  n=22: 1065 / 0
+  n=23: 1144 / 0
+  n=24: 1000 / 0
+  n=25: 1183 / 0
+  n=26: 961 / 0
+  n=27: 1035 / 0
+  n=28: 893 / 0
+  n=29: 971 / 0
+  n=30: 980 / 0
 
 Sufficiency test for Eulerian
 Tested connected graphs with up to 8 vertices.
 Found 153 counterexamples.
-Showing a random counterexample:
+Showing 3 random counterexamples:
 Counterexample graph in graph6 format: FQzUW
+Counterexample graph in graph6 format: F?`vw
+Counterexample graph in graph6 format: G?ouXw
 
 Stats (graphs with property / have alpha_od=1):
   n=1: 1 / 1
