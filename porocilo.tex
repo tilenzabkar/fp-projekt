@@ -86,11 +86,21 @@ Za $n \geqslant 10$ je popolni pregled neizvedljiv, saj je takih grafov preveč,
 
 V prvem načinu smo v vsaki iteraciji naključno generirali nov graf, ga popravili, da ima premer $\leqslant 2$ in šele nato poračunali $\alpha_{od}(G)$. Popravil smo ga tako, da smo poiskali dve vozlišči, ki sta oddaljeni za premer grafa, in naključno izbrali dve vozlišči, ki sta na tej poti. Nato smo med tema dvema vozliščema dodali povezavo. To smo ponavljali, dokler ni bil premer manjši ali enak 2. Nato pa smo s spreminjanjem tega grafa, dobili nov graf. Za vsak $n$ od 10 do 30 vključno smo izvedli 500 poskusov.
 
-V drugem načinu smo samo v prvi iteraciji naključno generirali graf. Nato smo v vsaki iteraciji namesto nove neodvisne generacije grafa vzeli že obstoječ graf, izbrali dve naključni povezavi v grafu in ju zamenjali v naključno izbrani smeri. Ponovno smo preverili in popravili graf, če smo z zamenjavo povezav povečali premer. Za vsak $n$ od 10 do 30 vključno, smo s tem pristopom izvedli 1000 poskusov. Na sliki \ref{} lahko vidimo prvi in zadnji graf iteracije pri tem postopku pri $n = 10$ in $n = 11$.
+V drugem načinu smo samo v prvi iteraciji naključno generirali graf. Nato smo v vsaki iteraciji namesto nove neodvisne generacije grafa vzeli že obstoječ graf, izbrali dve naključni povezavi v grafu in ju zamenjali v naključno izbrani smeri. Ponovno smo preverili in popravili graf, če smo z zamenjavo povezav povečali premer. Za vsak $n$ od 10 do 30 vključno, smo s tem pristopom izvedli 1000 poskusov. Na sliki 1 in 2 lahko vidimo prvi in zadnji graf iteracije pri tem postopku pri $n = 10$ in $n = 11$.
 
-\textbf{tukaj še slike!}
-za $n = 10$ prvi graf je \verb|IamqYf`^g|, zadnji pa \verb!I|knsLPr?!
-za $n = 11$ prvi graf je \verb|JhfJrNtIqZ_|, zadnji pa \verb|JTrtBQwov@?|
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{slike/n=10.png}
+\caption{Prvi in zadnji graf iteracije pri $n = 10$.}
+\label{fig: n=10} 
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{slike/n=11.png}
+\caption{Prvi in zadnji graf iteracije pri $n = 11$.}
+\label{fig: n=11} 
+\end{figure}
 
 Skupno smo zbrali 94456 grafov z lastnostjo $\alpha_{od}(G) = 1$.
 
