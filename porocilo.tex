@@ -84,9 +84,9 @@ Za $n \leqslant 9$ smo generirali vse neizomorfne grafe in obdržali le tiste z 
 
 Za $n \geqslant 10$ je popolni pregled neizvedljiv, saj je takih grafov preveč, da bi lahko $\alpha_{od}(G)$ preverili za vsakega posebej. Zato smo se lotili iskanja takih grafov na dva različna načina. 
 
-V prvem načinu smo v vsaki iteraciji naključno generirali nov graf, ga popravili, da ima premer $\leqslant 2$ in šele nato poračunali $\alpha_{od}(G)$. Popravil smo ga tako, da smo poiskali dve vozlišči, ki sta oddaljeni za premer grafa, in naključno izbrali dve vozlišči, ki sta na tej poti. Nato smo med tema dvema vozliščema dodali povezavo. To smo ponavljali, dokler ni bil premer manjši ali enak 2. Nato pa smo s spreminjanjem tega grafa, dobili nov graf. Za vsak $n$ od 10 do 30 vključno smo izvedli 500 poskusov.
+V prvem načinu smo v vsaki iteraciji naključno generirali nov graf, ga popravili, da ima premer $\leqslant 2$ in šele nato poračunali $\alpha_{od}(G)$. Popravil smo ga tako, da smo poiskali dve vozlišči, ki sta oddaljeni za premer grafa, in naključno izbrali dve vozlišči, ki sta na tej poti. Nato smo med tema dvema vozliščema dodali povezavo. To smo ponavljali, dokler ni bil premer manjši ali enak 2. Za vsak $n$ od 10 do 30 vključno smo izvedli 500 poskusov.
 
-V drugem načinu smo samo v prvi iteraciji naključno generirali graf. Nato smo v vsaki iteraciji namesto nove neodvisne generacije grafa vzeli že obstoječ graf, izbrali dve naključni povezavi v grafu in ju zamenjali v naključno izbrani smeri. Ponovno smo preverili in popravili graf, če smo z zamenjavo povezav povečali premer. Za vsak $n$ od 10 do 30 vključno, smo s tem pristopom izvedli 1000 poskusov. Na sliki 1 in 2 lahko vidimo prvi in zadnji graf iteracije pri tem postopku pri $n = 10$ in $n = 11$.
+V drugem načinu smo samo v prvi iteraciji naključno generirali graf. Nato smo v vsaki iteraciji namesto nove neodvisne generacije grafa vzeli že obstoječ graf, izbrali dve naključni povezavi v grafu in ju zamenjali v naključno izbrani smeri. To pomeni, da smo izbrali 4 vozlišča, in odstranili obstoječi dve povezavi in vozlišča povezali na drugačen način. Ponovno smo preverili in popravili graf, če smo z zamenjavo povezav povečali premer. Za vsak $n$ od 10 do 30 vključno, smo s tem pristopom izvedli 1000 poskusov. Na sliki 1 in 2 lahko vidimo prvi in zadnji graf iteracije pri tem postopku pri $n = 10$ in $n = 11$.
 
 \begin{figure}[H]
 \centering
@@ -104,7 +104,6 @@ V drugem načinu smo samo v prvi iteraciji naključno generirali graf. Nato smo 
 
 Skupno smo zbrali 94456 grafov z lastnostjo $\alpha_{od}(G) = 1$.
 
-
 \section{Metode in implementacija}
 
 \subsection{Izračun $\alpha_{od}(G)$}
@@ -121,7 +120,6 @@ Implementirali smo še CLP za določanje najmanjšega števila barv za krepko li
     \item $\chi_{so}(P_4)$ = 3,
     \item $\chi_{so}(C_4)$ = 4,
     \item $\chi_{so}(C_5)$ = 5,
-    \item $\chi_{so}(K_{3,4})$ = 3.
 \end{itemize}
 Rezultati izpolnjujejo neenačbo $\alpha_{od}(G) \cdot \chi_{so}(G) \geqslant |V|.$
 
@@ -135,7 +133,7 @@ Teste nujnosti smo izvedeli na vseh 94456 grafih, teste zadostnosti pa smo zarad
 
 \section{Rezultati}
 \subsubsection*{H: Radij grafa je 1.}
-Radij grafa 1 pomeni, da imamo eno osrednje vozlišče, ki je povezano z vsemi ostalimi. Zanimalo nas je, če imajo grafi z $\alpha_{od}(G) = 1$ pogosto osrednje vozlišče. Pri testu nujnosti smo dobili 86019 protiprimerov. To pomeni, da ima le relativno majhen delež teh grafov vozlišče, ki je neposredno povezano z vsemi ostalimi. Rezultat je smiselen, saj pogoj $\alpha_{od}(G)=1$ zagotavlja premer največ 2, ne vsiljuje pa obstoja izrazito centralnega vozlišča. Vidimo, da je radij 1 prej izjema kot tipična lasnost.
+Radij grafa 1 pomeni, da imamo eno osrednje vozlišče, ki je povezano z vsemi ostalimi. Zanimalo nas je, če imajo grafi z $\alpha_{od}(G) = 1$ pogosto osrednje vozlišče. Pri testu nujnosti smo dobili 86019 protiprimerov. To pomeni, da ima le relativno majhen delež grafov z $\alpha_{od}(G) = 1$ vozlišče, ki je neposredno povezano z vsemi ostalimi. Rezultat je smiselen, saj pogoj $\alpha_{od}(G)=1$ zagotavlja premer največ 2, ne vsiljuje pa obstoja izrazito centralnega vozlišča. Vidimo, da je radij 1 prej izjema kot tipična lasnost.
 
 \begin{figure}[H]
 \centering
@@ -145,7 +143,7 @@ Radij grafa 1 pomeni, da imamo eno osrednje vozlišče, ki je povezano z vsemi o
 \end{figure}
 
 \subsubsection*{H: Graf je regularen.}
-Graf je regularen, če imajo vsa vozlišča enako stopnjo. Pri testu nujnosti smo dobili 94416 protiprimerov. To kaže da pogoj $\alpha_{od}(G) = 1$ ne vsiljuje simetrije stopenj grafa. Razlog za to je v tem, da je paritetni pogoj v definiciji lihe neodvisne množice lokalen in občutljiv na strukturo sosedstev, ne pa na enakomerno porazdelitev stopenj po celotnem grafu. Regularnost torej ni tipična niti nujna lastnost grafov z $\alpha_{od}(G) = 1$. Velja pa, da večina regularnih grafov ima lastnost $\alpha_{od}(G) = 1$, namreč od 33 preverjenih grafov smo našli le 11 protiprimerov.
+Graf je regularen, če imajo vsa vozlišča enako stopnjo. Pri testu nujnosti smo dobili kar 94416 protiprimerov. To kaže da pogoj $\alpha_{od}(G) = 1$ ne vsiljuje simetrije stopenj grafa. Razlog za to je v tem, da je paritetni pogoj v definiciji lihe neodvisne množice lokalen in občutljiv na strukturo sosedstev, ne pa na enakomerno porazdelitev stopenj po celotnem grafu. Regularnost torej ni tipična niti nujna lastnost grafov z $\alpha_{od}(G) = 1$. Velja pa, da večina regularnih grafov ima lastnost $\alpha_{od}(G) = 1$, namreč od 33 preverjenih grafov pri testu zadostnosti smo našli le 11 protiprimerov.
 
 \begin{figure}[H]
 \centering
@@ -175,7 +173,7 @@ Graf je claw-free, če ne vsebuje $K_{1,3}$ kot induciran podgraf. Pri testu nuj
 \end{figure}
 
 \subsubsection*{H: Graf je triangle-free.}
-Graf $G$ je triangle-free, če ne vsebuje trikotnikov, tj. podgrafov izomorfnih $K_3$. Pri testu nujnosti smo dobili 94442 protiprimerov, kar pomeni, da odsotnost trikotnikov ni nujna lastnost tega razreda grafov. Trikotniki so lokalni kazalnik gostote in močne povezanosti med vozlišči, vendar njihova prisotnost sama po sebi še ne omogoča konstrukcije večje lihe neodvisne množice.
+Graf $G$ je triangle-free, če ne vsebuje trikotnikov, tj. podgrafov izomorfnih $K_3$. Pri testu nujnosti smo dobili 94442 protiprimerov, kar pomeni, da odsotnost trikotnikov ni nujna lastnost tega razreda grafov. Trikotniki so lokalni kazalnik gostote in močne povezanosti med vozlišči, vendar njihova prisotnost sama po sebi še ne zagotavlja obstoj večje lihe neodvisne množice.
 
 \begin{figure}[H]
 \centering
@@ -185,7 +183,7 @@ Graf $G$ je triangle-free, če ne vsebuje trikotnikov, tj. podgrafov izomorfnih 
 \end{figure}
 
 \subsubsection*{H: $\lambda (G) \geqslant 2$}
-Povezanost grafa $G$, označena z $\lambda (G)$, je najmanjše število povezav, katerih odstranitev graf razdeli na več komponent. Če velja $\lambda (G) \geqslant 2$, potem graf nima mostov, kar pomeni, da odstranitev katerekoli povezave ne prekine povezanosti grafa. Pri testu nujnosti smo našli 313 protiprimerov. Vsi ti protiprimeri se pojavijo pri majhnih velikostih grafa, medtem ko za $n \geqslant 10$ ni bilo nobenega protiprimera z $\lambda (G) = 1$. Tukaj je znova pomembno omeniti, da lahko takih grafov zaradi konstrukcije nismo našli pri večjih $n$. Če ima graf most, ta povezava ločuje graf na dva dela, ki sta povezana le prek ene povezave. Takšna konstrukcija običajno omogoča konstrukcijo lihe neodvisne množice večje od 1. Zato bi tudi pričakovali, da grafi z $\alpha_{od}(G) = 1$ praviloma nimajo mostov. Vendar rezultati pokažejo, da pri manjših grafih obstajajo izjeme, kjer kljub prisotnosti mostu globalna struktura grafa še vedno prepreči obstoj večje lihe neodvisne množice.
+Povezanost grafa $G$, označena z $\lambda (G)$, je najmanjše število povezav, katerih odstranitev graf razdeli na več komponent. Če velja $\lambda (G) \geqslant 2$, potem graf nima mostov, kar pomeni, da odstranitev katerekoli povezave ne prekine povezanosti grafa. Pri testu nujnosti smo našli 313 protiprimerov. Vsi ti protiprimeri se pojavijo pri majhnih velikostih grafa, medtem ko za $n \geqslant 10$ ni bilo nobenega protiprimera z $\lambda (G) = 1$. Tukaj je pomembno omeniti, da lahko takih grafov zaradi konstrukcije nismo našli pri večjih $n$. Če ima graf most, ta povezava ločuje graf na dva dela, ki sta povezana le prek ene povezave. Takšna konstrukcija običajno omogoča konstrukcijo lihe neodvisne množice večje od 1. Zato bi tudi pričakovali, da grafi z $\alpha_{od}(G) = 1$ praviloma nimajo mostov. Vendar rezultati pokažejo, da pri manjših grafih obstajajo izjeme, kjer kljub prisotnosti mostu globalna struktura grafa še vedno prepreči obstoj večje lihe neodvisne množice.
 
 \begin{figure}[H]
 \centering
@@ -224,12 +222,8 @@ Pri tej hipotezi, smo pri testu nujnosti dobili 94447 protiprimerov, kar pomeni,
 \label{fig: alpha(G) = 1} 
 \end{figure}
 
-
-\subsubsection*{H: $\alpha (G^2) = 1$}
-Kvadrat grafa $G^2$ je graf na isti množici vozlišč kot $G$, kjer sta dve vozlišči povezani, če je njuna razdalja v $G$ največ 2. Pogoj $\alpha (G^2) = 1$ pomeni, da v $G^2$ ne obstajata dve nepovezani vozlišči, torej je $G^2$ poln graf. Ekvivalento to pomeni, da ima graf $G$ premer največ 2. Pri testiranju nujnosti smo dobili le en protiprimer in to je graf z enim samim vozliščem, pri katerem je kvadrat grafa enak samemu sebi. 
-
-\subsubsection*{H: $\chi_{so}(G) = n$}
-$\chi_{so}(G)$ je najmanjše število barv, s katerimi lahko graf $G$ pobarvamo tako, da sosednja vozlišča nimajo iste barve in da za vsako vozlišče $v$ in vsako uporabljeno barvo velja, da se ta barva v sosedstvu vozlišča $v$ pojavi liho mnogokrat ali pa se sploh ne. Naš pogoj tako zahteva, da mora vsako vozlišče imeti svojo barvo. Zaradi časovne zahtevnosti CLP, smo testiranje za nujnost in zadostnost izvedeli le na grafih do 6 vozlišč. V obeh primerih nismo dobili nobenega protiprimera. Torej za grafe z $n \leqslant 6$ velja $\alpha_{od}(G) = 1$ natanko tedaj, ko $\chi_{so}(G) = n$. Vemo, da velja neenačba $\alpha_{od}(G) \cdot \chi_{so}(G) \geqslant |V|$, kar pa nam pove, da če je $\alpha_{od}(G) = 1$, potem nujno velja  $\chi_{so}(G) \geqslant |V|$. Ker pa je $|V|$ očitno zgornja meja za $\chi_{so}(G)$ sledi $\chi_{so}(G) = |V|$.
+\subsubsection*{H: $\chi_{so}(G) = |V|$}
+$\chi_{so}(G)$ je najmanjše število barv, s katerimi lahko graf $G$ pobarvamo tako, da sosednja vozlišča nimajo iste barve in da za vsako vozlišče $v$ in vsako uporabljeno barvo velja, da se ta barva v sosedstvu vozlišča $v$ pojavi liho mnogokrat ali pa se sploh ne. Naš pogoj tako zahteva, da mora vsako vozlišče imeti svojo barvo. Zaradi časovne zahtevnosti CLP, smo testiranje za nujnost in zadostnost izvedeli le na grafih do 6 vozlišč. V obeh primerih nismo dobili nobenega protiprimera. Torej za grafe z $n \leqslant 6$ velja $\alpha_{od}(G) = 1$ natanko tedaj, ko $\chi_{so}(G) = |V|$. To je očitno, saj velja neenačba $\alpha_{od}(G) \cdot \chi_{so}(G) \geqslant |V|$, kar pa nam pove, da če je $\alpha_{od}(G) = 1$, potem nujno velja  $\chi_{so}(G) \geqslant |V|$. Ker pa je $|V|$ očitno zgornja meja za $\chi_{so}(G)$ sledi $\chi_{so}(G) = |V|$.
 
 \subsubsection*{H: Povprečna stopnja grafa je vsaj $0{,}7 \cdot n$.}
 Povprečna stopnja grafa je $\overline{d}(G) = \frac{2|E|}{|V|}$. Pri testu nujnosti smo dobili 94177 protiprimerov. Večina grafov je torej dovolj povezana, da ohranijo majhen premer in preprečijo obstoj večje lihe neodvisne množice, hkrati pa imajo nižjo povprečno stopnjo, kot bi zahtevala meja $0,7 \cdot n$.
@@ -242,7 +236,7 @@ Povprečna stopnja grafa je $\overline{d}(G) = \frac{2|E|}{|V|}$. Pri testu nujn
 \end{figure}
 
 \subsubsection*{H: Gostota grafa je med 0,4 in 0,6.}
-Gostota grafa je definirana kot $2 |E| \, / \, n (n-1)$.Pri hipotezi, da ima graf z lastnostjo $\alpha_{od}(G) = 1$ gostoto med 0,4 in 0,6, smo pri testu nujnosti dobili 37632 protiprimerov. To pomeni, da tak interval gostote ni nujna lastnost tega razreda grafov, je pa zelo pogost. Čeprav so grafi z $\alpha_{od}(G) = 1$ praviloma razmeroma gosti in imajo majhen premer, se njihova gostota lahko precej razlikuje in ni omejena na ozek interval. Obstajajo tako grafi, ki so bistveno redkejši, kot tudi grafi, ki so skoraj polni, pa kljub temu izpolnjujejo pogoj $\alpha_{od}(G) = 1$. Rezultat kaže, da lastnost $\alpha_{od}(G) = 1$ določa predvsem strukturne in paritetne omejitve grafa, ne pa njegove natančne gostote.
+Gostota grafa je definirana kot $2 |E| \, / \, n (n-1).$ Pri hipotezi, da ima graf z lastnostjo $\alpha_{od}(G) = 1$ gostoto med 0,4 in 0,6, smo pri testu nujnosti dobili 37632 protiprimerov. To pomeni, da tak interval gostote ni nujna lastnost tega razreda grafov, je pa zelo pogost. Čeprav so grafi z $\alpha_{od}(G) = 1$ praviloma razmeroma gosti in imajo majhen premer, se njihova gostota lahko precej razlikuje in ni omejena na ozek interval. Obstajajo tako grafi, ki so bistveno redkejši, kot tudi grafi, ki so skoraj polni, pa kljub temu izpolnjujejo pogoj $\alpha_{od}(G) = 1$. Rezultat kaže, da lastnost $\alpha_{od}(G) = 1$ določa predvsem strukturne in paritetne omejitve grafa, ne pa njegove natančne gostote.
 
 \begin{figure}[H]
 \centering
@@ -264,7 +258,7 @@ Graf $G$ ima Hamiltonov cikel, če vsebuje cikel, ki obišče vsako vozlišče n
 Zanimivo je, da se lastnost, da je graf Eulerjev, pri testu nujnosti obnaša bistveno slabše, saj smo našli kar 93853 protiprimerov. Graf je Eulerjev, če vsebuje Eulerjev cikel, torej zaprt sprehod, ki vsako povezavo obišče natanko enkrat. Za povezan graf je to ekvivalentno pogoju, da imajo vsa vozlišča sodo stopnjo. Razlog za veliko večje število protiprimerov je v naravi obeh lastnosti. Hamiltonskost je globalna lastnost, ki zahteva obstoj cikla skozi vsa vozlišča, kar je povezano z lastnostmi kot je gostota grafa in majhen premer. Eulerjevost pa je povsem lokalna paritetna lastnost, saj je odvisna izključno od sode stopnje vozlišč. Graf je lahko zelo gost in močno povezan, pa kljub temu ni Eulerjev, če ima le nekaj vozlišč lihe stopnje. 
 
 \section{Zaključek}
-V nalogi smo preučili nekaj strukturnih lastnosti grafov z lastnostjo $\alpha_{od}(G) = 1$ ter testirali vrsto hipotez. Rezultati kažejo, da gre za razred grafov z zelo omejenimi globalnimi lastnostmi, kot sta majhen premer in praviloma visoka povezanost, vendar hkrati z veliko lokalno in stopenjsko raznolikostjo. Večina klasičnih lastnosti, kot so regularnost, odsotnost trikotnikov ali claws, ter natančno določena gostota, se je izkazala za ne nujne. Po drugi strani majhno število protiprimerov pri hipotezah o povezljivosti, odsotnosti dvojčkov in velikosti neodvisne množice potrjuje, da te lastnosti dobro opisujejo tipično strukturo grafov z $\alpha_{od}(G) = 1$.
+V nalogi smo preučili nekaj strukturnih lastnosti grafov z lastnostjo $\alpha_{od}(G) = 1$ ter testirali vrsto hipotez. Rezultati kažejo, da gre za razred grafov z zelo omejenimi globalnimi lastnostmi, kot sta majhen premer in praviloma visoka povezanost, vendar hkrati z veliko lokalno in stopenjsko raznolikostjo. Večina klasičnih lastnosti, kot so regularnost, odsotnost trikotnikov ali claws, ter natančno določena gostota, se je izkazala za ne nujne. Po drugi strani majhno število protiprimerov pri hipotezah o povezanosti grafa, povezanosti vozlišč, odsotnosti dvojčkov in velikosti neodvisne množice potrjuje, da te lastnosti dobro opisujejo tipično strukturo grafov z $\alpha_{od}(G) = 1$.
 
 \newpage
 \section{Priloga}
