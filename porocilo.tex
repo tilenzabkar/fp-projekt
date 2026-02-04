@@ -52,13 +52,13 @@ Iz literature je znano, da:
     \item Če je graf claw-free, potem velja, da je $\alpha_{od}(G) = 1$ natanko tedaj, ko ima graf premer največ 2.
 \end{enumerate}
 
-\section{Opis problema}
+\section{Cilj naloge}
+Cilj naloge je poiskati pogoste lastnosti grafov z lastnostjo $\alpha_{od}(G) = 1$ prek potrebnih pogojev in poiskati lastnosti, ki pogosto implicirajo $\alpha_{od}(G) = 1$ prek zadostnih pogojev. To pomeni, da smo iskali pogoje, ki pomenijo majhno število protiprimerov.
 
-\subsection{Cilj naloge}
-Cilj naloge je poiskati pogoste lastnosti grafov z lastnostjo $\alpha_{od}(G) = 1$ prek potrebnih in zadostnih pogojev. To pomeni, da smo iskali pogoje, ki pomenijo majhno število protiprimerov.
+\section{Generiranje grafov}
 
-\subsection{Generiranje grafov}
-Za $n \leqslant 9$ smo generirali vse neizomorfne grafe in obdržali le tiste z $\alpha_{od}(G) = 1$. Rezultati so zbrani v tabeli \ref{tab:small-graphs-alphaod1}. Slike primerov najdenih grafov z lastnostjo $\alpha_{od}(G) = 1$ so zbrane v poglavju Priloga na strani \pageref{sec:priloga}.
+\subsection{Generiranje grafov za $|V| \leqslant 9$}
+Za $n \leqslant 9$ smo generirali vse neizomorfne grafe na $n$ vozliščih in obdržali le tiste z $\alpha_{od}(G) = 1$. Opis računanja $\alpha_{od}(G)$ je v poglavju \ref{subsec:alphaod}. To smo lahko storili do $n\leqslant 9,$ ker smo predčasno izločili grafe, ki so imeli premer strogo večji od 2. Ker je to potrebna lastnost, za take grafe ni bilo potrebno računati $\alpha_{od}(G)$. Rezultati so zbrani v tabeli \ref{tab:small-graphs-alphaod1}. Slike primerov najdenih grafov z lastnostjo $\alpha_{od}(G) = 1$ so zbrane v poglavju Priloga na strani \pageref{sec:priloga}.
 
 \begin{table}[H]
     \centering
@@ -81,12 +81,17 @@ Za $n \leqslant 9$ smo generirali vse neizomorfne grafe in obdržali le tiste z 
     \label{tab:small-graphs-alphaod1}
 \end{table}
 
+\subsection{Generiranje večjih grafov}
 
-Za $n \geqslant 10$ je popolni pregled neizvedljiv, saj je takih grafov preveč, da bi lahko $\alpha_{od}(G)$ preverili za vsakega posebej. Zato smo se lotili iskanja takih grafov na dva različna načina. 
+Za $n \geqslant 10$ je popolni pregled neizvedljiv, saj je takih grafov preveč, da bi lahko $\alpha_{od}(G)$ preverili za vsakega posebej. Odločili smo se, da bomo iskali velike grafe za $10 \leqslant n \leqslant 30.$ Iskanja velikih grafov smo se lotili na dva različna načina. 
 
-V prvem načinu smo v vsaki iteraciji naključno generirali nov graf, ga popravili, da ima premer $\leqslant 2$ in šele nato poračunali $\alpha_{od}(G)$. Popravil smo ga tako, da smo poiskali dve vozlišči, ki sta oddaljeni za premer grafa, in naključno izbrali dve vozlišči, ki sta na tej poti. Nato smo med tema dvema vozliščema dodali povezavo. To smo ponavljali, dokler ni bil premer manjši ali enak 2. Za vsak $n$ od 10 do 30 vključno smo izvedli 500 poskusov.
+\subsubsection{Naključni pristop}
 
-V drugem načinu smo samo v prvi iteraciji naključno generirali graf. Nato smo v vsaki iteraciji namesto nove neodvisne generacije grafa vzeli že obstoječ graf, izbrali dve naključni povezavi v grafu in ju zamenjali v naključno izbrani smeri. To pomeni, da smo izbrali 4 vozlišča, in odstranili obstoječi dve povezavi in vozlišča povezali na drugačen način. Ponovno smo preverili in popravili graf, če smo z zamenjavo povezav povečali premer. Za vsak $n$ od 10 do 30 vključno, smo s tem pristopom izvedli 1000 poskusov. Na slikah 1 in 2 lahko vidimo prvi in zadnji graf iteracije pri tem postopku pri $n = 10$ in $n = 11$.
+V prvem načinu smo v vsaki iteraciji naključno generirali nov graf, kjer ima vsaka povezava na grafu verjetnost $p = 0{,}5.$ Ker v takih grafih ni bil zagotovljen pogoj $\text{diam}(G) \leqslant 2$, smo ga pred računanjem $\alpha_{od}(G)$ popravili. Popravili smo ga tako, da smo najprej poiskali dve vozlišči $v_1$ in $v_2$, ki sta oddaljeni za premer grafa. V primeru, da je teh vozlišč več, smo naključno izbrali dve. Nato smo naključno izbrali dve nesosednji vozlišči $v_3$ in $v_4$, ki se nahajata na najkrajši poti med $v_1$ in $v_2$. Te seveda vedno obstajata, saj je pogoj za ta postopek premer strogo večji od 2. Med vozliščema $v_3$ in $v_4$ smo nato dodali povezavo. Ta postopek zmanjša dolžino poti med $v_1$ in $v_2$, ki sta na razdalji $\text{diam}(G)$ in tako tudi zmanjšuje premer. To smo ponavljali, dokler ni bil premer manjši ali enak 2. Šele nato smo izračnuali $\alpha_{od}(G).$ Seveda smo pred shranjevanjem tudi preverili, če je graf izomorfen kateremu že najdenemu grafu. Za vsak $n$ od 10 do 30 vključno smo izvedli 500 takih poskusov. Pri $n = 10$ smo s takim pristopom našli 356 grafov, za $n = 30$ pa 361. Povprečno število najdenih grafov za vsak $10 \leqslant n \leqslant 30$ je nad 400.
+
+\subsubsection{Hevristični pristop}
+
+V drugem načinu smo samo v prvi iteraciji naključno generirali graf $G$ z verjetnostjo povezav $p = 0{,}7.$ Nato smo v vsaki iteraciji namesto nove neodvisne generacije grafa, kot smo to počeli v prejšnjem pristopu, le malce spremenili graf $G$. To smo storili tako, da smo izbrali dve naključni povezavi $e_1$ in $e_2$ v $G$ in ju zamenjali v naključno izbrani smeri. To pomeni, da smo izbrali 4 vozlišča $v_1$, $v_2$, $v_3$ in $v_4$, kjer $e_1 = \{v_1, v_2\}$ in $e_2 = \{v_3, v_4\}.$ Nato smo odstranili obstoječi povezavi $e_1$ in $e_2$ in vozlišča povezali na drugačen način. Z verjetnostjo 1/2 smo dodali povezavi $e_3 = \{v_1, v_3\}$ in $e_4 = \{v_2, v_4\}$, sicer pa smo dodali povezavi $e_3 = \{v_1, v_4\}$ in $e_4 = \{v_2, v_3\}.$ S tem postopkom smo dobili nov graf $G'$, ki pa je še vedno podoben grafu $G.$ Ponovno smo preverili in popravili premer grafa z enakim postopkom kot v naključnem pristopu, če smo z zamenjavo povezav povečali premer. Za vsak $n$ od 10 do 30 vključno, smo s tem pristopom izvedli 1000 poskusov. Za $n = 10$ smo našli 716 grafov, za $n = 30$ pa 619 grafov. Na slikah 1 in 2 lahko vidimo prvi in zadnji graf iteracije pri tem postopku pri $n = 10$ in $n = 11$.
 
 \begin{figure}[H]
 \centering
@@ -104,9 +109,9 @@ V drugem načinu smo samo v prvi iteraciji naključno generirali graf. Nato smo 
 
 Skupno smo zbrali 94456 grafov z lastnostjo $\alpha_{od}(G) = 1$.
 
-\section{Metode in implementacija}
+\section{Pomožne funkcije za testiranje hipotez}
 
-\subsection{Izračun $\alpha_{od}(G)$}
+\subsection{Izračun $\alpha_{od}(G)$} \label{subsec:alphaod}
 Funkcijo \fn{alpha\_{od}(G)} smo implementirali s celoštevilskim lineranim programom (CLP), ki sledi definiciji lihe neodvisne množice. Funkcija vrne velikost največje lihe neodvisne množice v grafu $G$. Testiranje na majhnih grafih je potrdilo pravilnost implementacije:
 \begin{itemize}
     \item $\alpha_{od}(P_4)$ = 2,
@@ -115,13 +120,15 @@ Funkcijo \fn{alpha\_{od}(G)} smo implementirali s celoštevilskim lineranim prog
 \end{itemize}
 
 \subsection{Izračun $\chi_{so}(G)$}
-Implementirali smo še CLP za določanje najmanjšega števila barv za krepko liho barvanje grafa $G$. Testiranje na majhnih grafih nam je vrnilo naslednje rezultate:
+Implementirali smo še CLP za določanje najmanjšega števila barv za krepko liho barvanje grafa $G$, zaradi tesne zveze med $\alpha_{od}(G)$ in $\chi_{so}(G)$. Testiranje na majhnih grafih nam je vrnilo naslednje rezultate:
 \begin{itemize}
     \item $\chi_{so}(P_4)$ = 3,
     \item $\chi_{so}(C_4)$ = 4,
     \item $\chi_{so}(C_5)$ = 5.
 \end{itemize}
-Rezultati izpolnjujejo neenačbo $\alpha_{od}(G) \cdot \chi_{so}(G) \geqslant |V|.$
+Opazimo, da rezultati izpolnjujejo znano neenačbo $\alpha_{od}(G) \cdot \chi_{so}(G) \geqslant |V|.$
+
+\section{Testiranje in rezultati}
 
 \subsection{Testiranje hipotez}
 Za vsako hipotezo $H(G)$ smo testirali:
@@ -131,7 +138,16 @@ Za vsako hipotezo $H(G)$ smo testirali:
 \end{itemize}
 Teste nujnosti smo izvedeli na vseh 94456 grafih, teste zadostnosti pa smo zaradi časovne zahtevnosti izvedli le na grafih do $n \leqslant 8$.
 
-\section{Rezultati}
+\vspace{0.5em}
+
+\noindent Testiranje smo opravili tako, da smo definirali funkcije, ki vrnejo \verb|True| v primeru, da hipoteza drži za dan graf $G$ in \verb|False| v primeru, da hipoteza ne drži. Nato smo se za teste nujnosti sprehodili čez vse najdene grafe z $\alpha_{od}(G) = 1$ in za vsakega poračunali vrednosti funkcije za dano hipotezo. Če je funkcija vrnila \verb|False|, smo graf shranili na seznam protiprimerov. Podobno smo naredili za teste zadostnosti, le da smo se sprehodili čez vse neizomorfne grafe z $|V| \leqslant 8$ zaradi časovne zahtevnosti.
+
+\vspace{0.5em}
+
+\noindent Predstavili bomo le nekaj rezultatov testiranja, ki so nam bili zanimivejši. Vsi rezultati se nahajajo v datoteki \verb|text_results.txt| na repozitoriju.
+
+\subsection{Rezultati testiranja}
+
 \subsubsection*{H: Radij grafa je 1.}
 Radij grafa 1 pomeni, da imamo eno osrednje vozlišče, ki je povezano z vsemi ostalimi. Zanimalo nas je, če imajo grafi z $\alpha_{od}(G) = 1$ pogosto osrednje vozlišče. Pri testu nujnosti smo dobili 86019 protiprimerov. To pomeni, da ima le relativno majhen delež grafov z $\alpha_{od}(G) = 1$ vozlišče, ki je neposredno povezano z vsemi ostalimi. Rezultat je smiselen, saj pogoj $\alpha_{od}(G)=1$ zagotavlja premer največ 2, ne vsiljuje pa obstoja izrazito centralnega vozlišča. Vidimo, da je radij 1 prej izjema kot tipična lasnost.
 
